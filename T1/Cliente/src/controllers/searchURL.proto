@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+service URLsearch{
+    rpc GetServerResponse(Message) returns (URLs){}
+}
+
+message Message{
+    string message = 1;
+}
+
+message URLs{
+    repeated URL url = 1;
+}
+
+message URL{
+
+    int32 id = 1;
+    string title = 2;
+    string description =3;
+    string keywords =4;
+    string url = 5;
+}

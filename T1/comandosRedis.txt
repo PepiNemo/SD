@@ -1,0 +1,3 @@
+docker exec -it cache-bitnami sh
+redis-cli -u redis://redis
+info memory

@@ -1,0 +1,35 @@
+Vamos a testear 
+2 rondas de:
+
+
+3 veces  a -> 584 kb
+2 veces  e -> 575.43kb
+1 veces i -> 566.98 KB
+1 veces o -> 569.45 KB
+
+Suma de a, e, i = 1727kb
+La memoria en uso antes de tener cualquier cache es de 1.9 mb
+por la query a, que es la mas grande, se utiliza 0.64 mb = 640 kB
+Si queremos mantener en cache 3 querys + 1 de olgura, serian:
+    1.9 mb + 0,64 x 4 =4,46 mb, entero mas cercano, sin que caiga otra query 5mb
+
+Politica LRU y maxsize 5mb, permite 3 querys de vocales.
+Page Fault: 
+a-e-i-o ; a-e-i-o
+
+Politica allkeys-LFU y maxsize 5mb, permite 3 querys de vocales.
+Page Fault: 
+a-e-i-o; i-o
+
+Poltica allkeys-random y maxsize 5mb, permite 3 querys de vocales.
+Page Fault:
+a-e-i-o; e-i
+
+
+
+
+
+
+
+
+
