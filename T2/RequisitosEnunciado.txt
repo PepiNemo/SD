@@ -1,0 +1,17 @@
+Inscripcion Premiom.
+
+Mostrar Lista de Nuevos Miembros. Una vez al mes.
+
+Carritos con gps.
+
+Carrito Registra Ventas.
+
+El sistema informatico debe:
+    1. Calcular estadisticas sobre la venta (Cantidad de ventas por dia y clientes frecuentes)
+    2. Tiempo Real:
+        2.1 Posicion geografica de cada Carrito
+        2.2 Alertar de eventos extraños
+    3. Tiempo Real y menos de veinte Sopaipillas
+        Preparar reposicion de stock.
+    
+
