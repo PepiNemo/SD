@@ -1,52 +1,62 @@
-import { KafkaClient, Producer, KeyedMessage, Consumer } from "kafka-node"
+import {  Kafka, logLevel } from "kafkajs"
 import { aplicacion } from "./App.js"
+import ip from "ip"
 
 //Aqui en un futuro se conectara con Kafka y tal vez con Postgres
+
+async function  kafkaSetup (){
+    //Creamos un cliente de Kafka para crear los topicos
+
+    const host = process.env.KAFKA_HOST_IP || ip.address()
+
+    const kafka = new Kafka({
+    logLevel: logLevel.INFO,
+    brokers: [`${host}:9092`],
+    clientId: 'example',
+    })
+    
+    const admin = kafka.admin()
+    await admin.connect()
+    const ITopicConfig = [{
+        topic: "test-topic",
+        numPartitions: 3,     
+    }]
+    await admin.createTopics({
+        topics: ITopicConfig
+    })
+
+    const producer = kafka.producer()
+    await producer.connect()
+    //Publicamos el payloads cada 5 segundos con setInterval
+    setInterval(async ()=> {
+        producer.send({
+            topic: 'test-topic',
+            messages: [
+              { value: 'Hello KafkaJS user!' },
+            ],
+        }, 10000)
+    })
+
+    const Consumer = kafka.consumer({ groupId: 'test-group' })
+    await Consumer.connect()
+    await Consumer.subscribe({ topic: 'test-topic', fromBeginning: true })
+    await Consumer.run({
+        eachMessage: async ({ topic, partition, message }) => {
+          console.log({
+            value: message.value.toString(),
+          })
+        },
+    })
+
+}
 
 aplicacion.listen(3000, () => {
     console.log('Funcionando en el puerto 3000')
 })
 
-
-//Definimos los tipicos a crear
-let topicsToCreate = [{
-    topic: 'topic1',
-    partitions: 3  
-    },
-  {
-    topic: 'topic2',
-    partitions: 3,
-  }
-]
-
-//Creamos un cliente de Kafka para crear los topicos
-const client = new KafkaClient({ kafkaHost: "kafka://kafka:9092" })
-client.createTopics(topicsToCreate, (error, result) => {
-    console.log(result)
-  });
+kafkaSetup()
 
 
 
-const producer = new Producer(client)
-const km = new KeyedMessage('key', 'message')
-const payloads = [
-    { topic: 'topic1', messages: 'hi', partition: 0 },
-    { topic: 'topic2', messages: ['hello', 'world', km] }
-];
-
-//Publicamos el payloads cada 5 segundos con setInterval
-producer.on('ready', function () {
-    setInterval(()=> {
-        producer.send(payloads, function (err, data) {
-            console.log(data);
-        }, 5000)
-    });
-});
- 
-producer.on('error', function (err) {})
 
 
-const consumer = new Consumer(client, [{ topic: 'topic1'}])
-consumer.on('message', (message) => {
-    console.log(message)
-})
