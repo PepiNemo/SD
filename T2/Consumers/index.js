@@ -2,37 +2,17 @@ import { Kafka, logLevel } from "kafkajs"
 
 const host = process.env.KAFKA_HOST_IP
 
-const kafkaVentas = new Kafka({
+const kafkaCli = new Kafka({
     logLevel: logLevel.INFO,
     brokers: [`${host}:9092`],
-    clientId: 'CliVentas',
+    clientId: 'Cliente',
 })
-
-const kafkaStock = new Kafka({
-    logLevel: logLevel.INFO,
-    brokers: [`${host}:9092`],
-    clientId: 'CliStock',
-})
-
-const kafkaCoordenadas = new Kafka({
-  logLevel: logLevel.INFO,
-  brokers: [`${host}:9092`],
-  clientId: 'CliCoordenadas',
-})
-
-const kafkaMiembros = new Kafka({
-  logLevel: logLevel.INFO,
-  brokers: [`${host}:9092`],
-  clientId: 'CliMiembros',
-})
-
-
 
 //Leemos los topics con 2 clientes distintos, para ambos y solo un topic
-const consumerVentas = kafkaVentas.consumer({ groupId: 'group1' })
-const consumerStock = kafkaStock.consumer({ groupId: 'group2' })
-const consumerCoor = kafkaCoordenadas.consumer({groupId: 'group3'})
-const consumerMiembro = kafkaCoordenadas.consumer({groupId: 'group4'})
+const consumerVentas = kafkaCli.consumer({ groupId: 'group1' })
+const consumerStock = kafkaCli.consumer({ groupId: 'group2' })
+const consumerCoor = kafkaCli.consumer({groupId: 'group3'})
+const consumerMiembro = kafkaCli.consumer({groupId: 'group4'})
 
 await consumerVentas.connect()
 await consumerStock.connect()
