@@ -1,60 +1,25 @@
-import {  Kafka, logLevel } from "kafkajs"
 import { aplicacion } from "./App.js"
-import ip from "ip"
-
-//Aqui en un futuro se conectara con Kafka y tal vez con Postgres
+import { createTopics, publiclar } from "./services/kafka.methods.js"
 
 async function  kafkaSetup (){
-    //Creamos un cliente de Kafka para crear los topicos
-
-    const host = process.env.KAFKA_HOST_IP || ip.address()
-
-    const kafka = new Kafka({
-    logLevel: logLevel.INFO,
-    brokers: [`${host}:9092`],
-    clientId: 'example',
-    })
-    
-    const admin = kafka.admin()
-    await admin.connect()
-    const ITopicConfig = [{
-        topic: "test-topic",
-        numPartitions: 3,     
-    }]
-    await admin.createTopics({
-        topics: ITopicConfig
-    })
-
-    const producer = kafka.producer()
-    await producer.connect()
-    //Publicamos el payloads cada 5 segundos con setInterval
-    setInterval(async ()=> {
-        producer.send({
-            topic: 'test-topic',
-            messages: [
-              { value: 'Hello KafkaJS user!' },
-            ],
-        }, 10000)
-    })
-
-    const Consumer = kafka.consumer({ groupId: 'test-group' })
-    await Consumer.connect()
-    await Consumer.subscribe({ topic: 'test-topic', fromBeginning: true })
-    await Consumer.run({
-        eachMessage: async ({ topic, partition, message }) => {
-          console.log({
-            value: message.value.toString(),
-          })
-        },
-    })
-
+    //Como Servidor productor, creamos los topicos y probamos publicando unos mensajes en los topicos
+    await createTopics()
+    await publiclar({
+      topic:'test-topic', 
+      message:'Hello KafkaJS user test-topic!', 
+      time:3000})
+    await publiclar({
+        topic:'topic2', 
+        message:'Hello Topic 2!!', 
+        time:10000})
 }
 
+kafkaSetup()
 aplicacion.listen(3000, () => {
     console.log('Funcionando en el puerto 3000')
 })
 
-kafkaSetup()
+
 
 
 

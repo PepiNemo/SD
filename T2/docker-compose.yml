@@ -23,11 +23,13 @@ services:
       - kafka
     environment:
       - KAFKA_HOST_IP=kafka
+    ports:
+      - "3000:3000"
 
 
-#  consumers:
-#    build: './Consumer'
-#    depends_on:
-#      - kafka
-#    networks:
-#      - app-tier
+  consumers:
+    build: './Consumers'
+    depends_on:
+      - serverproducer
+    environment:
+      - KAFKA_HOST_IP=kafka

@@ -1,5 +1,15 @@
+import { publiclar } from "../services/kafka.methods.js"
+
 export const RegistarVenta = async (req, res) => {
-    res.status(200).json({"message" : "Registrando Venta"})
+    if(req.body?.idCliente){
+        publiclar({
+            topic: "Ventas",
+            message: `Nueva venta para el cliente ${req.body.idCliente}`
+        })
+        return res.status(200).json({"message" : "Registrando Venta"})
+    }else{
+        return res.status(404).json({"message" : "Error al registrar la venta "})
+    }
 }
 
 export const EliminarVenta = async (req, res) => {
