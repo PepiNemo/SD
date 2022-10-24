@@ -20,11 +20,9 @@
 | Nombre Endpoint | Entidad EndPoint | HTTP Method | Route | Body params |
 | ------ | ------ | ------ | ------ | ------ |
 | 1.RegistrarMiembro | Miembro | Post | localhost:3000/Miembro/RegistarMiebro | Ninguno|
-| 2.EliminarMiembro | Miembro | Delete | localhost:3000/Miembro/EliminarMiembro | id(Miembro a Eliminar) |
+|2.RegistarVenta | Venta | Post | localhost:3000/Venta/RegistarVenta | Ninguno |
 |3.CarritoProfugo | Carrito | Post | localhost:3000/Carrito/CarritoProfugo | id(Carrito) |
-|4.PosicionCarrito | Carrito | Patch | localhost:3000/Carrito/PosicionCarrito | id(Carrito)|
-|5.RegistarVenta | Venta | Post | localhost:3000/Venta/RegistarVenta | Ninguno |
-|6.EliminarVenta | Venta | Delete | localhost:3000/Venta/EliminarVenta | id(Venta)|
+
 
 #### Ejemplo de uso de Endpoints.
 <p align="center">
