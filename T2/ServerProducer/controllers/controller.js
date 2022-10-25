@@ -15,10 +15,10 @@ export const RegistrarMiembro = async (req, res) => {
 export const RegistarVenta = async (req, res) => {
     if(req.body?.idCliente){
         const { idCarrito, idCliente, cantidadSopaipilla, hora, stockRestante, ubicacionCarrito} = req.body
-        hora = Date.now()
+        var hora2 = Date.now()
         publiclar({
             topic: "Ventas",
-            message: `${idCarrito}|${idCliente}|${cantidadSopaipilla}|${hora}`
+            message: `${idCarrito}|${idCliente}|${cantidadSopaipilla}|${hora2}`
         })
         publiclar({
             topic: "Stock",
@@ -26,7 +26,7 @@ export const RegistarVenta = async (req, res) => {
         })
         publiclar({
             topic: "Coordenadas",
-            message: `idCarrito|${ubicacionCarrito}|${hora}`
+            message: `idCarrito|${ubicacionCarrito}|${hora2}`
         })
         return res.status(200).json({"message" : "Registrando Venta"})
     }else{

@@ -47,14 +47,17 @@ consumerStock.run({
 const carritos = new Map()
 consumerCoor.run({
   eachMessage: async ({ topic, partition, message }) => {
-    const mensaje = message.value.toString()
-    const dateNow = message.timestamp
-    const idCarro = mensaje.split("/")[1]
-    const coo = mensaje.split("|")[1]
-    carritos.set(idCarro, {coo, timestamp: message.timestamp} )
+    const mensaje = message.value.toString().split("|")
+    //console.log(mensaje)
+    const idCarro = mensaje[0]
+    const ubicacionCarrito = mensaje[1]
+    const timestamp = mensaje[2]
+    const dateNow = Date.now()
+   
+    carritos.set(idCarro, {ubicacionCarrito, timestamp} )
     carritos.forEach( (value, key, map) =>{
       //console.log(dateNow, key, value['timestamp'])
-      if(dateNow - value.timestamp > 60000 ){carritos.delete(key)}
+      if(dateNow - timestamp > 60000 ){carritos.delete(key)}
     })
     
     console.log(carritos)
