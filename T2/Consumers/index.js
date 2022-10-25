@@ -24,23 +24,62 @@ await consumerStock.subscribe({ topic: 'Stock', fromBeginning: false})
 await consumerCoor.subscribe({ topic: 'Coordenadas', fromBeginning: false})
 await consumerMiembro.subscribe({topic: 'Miembros', fromBeginning:true})
 
-consumerVentas.run({
-    eachMessage: async ({ topic, partition, message }) => {
-      console.log({
-        topic: topic,
-        partition: partition,
-        value: message.value.toString(),
-      })
-    }
+consumerMiembro.run({
+  eachMessage: async ({ topic, partition, message }) => {
+    console.log({
+      topic: topic,
+      partition: partition,
+      value: message.value.toString(),
+    })
+  }
 })
 
+
+let timeStart = Date.now()
+const VentasMap = new Map();
+consumerVentas.run({
+    eachMessage: async ({ topic, partition, message }) => {
+      const [idCarrito, idCliente, cantidadSopaipilla, hora2] = message.value.toString().split("|");
+      if(VentasMap.has(idCarrito)){
+        VentasMap.get(idCarrito).push({idCliente, cantidadSopaipilla, hora2})
+      }else{
+        VentasMap.set(idCarrito, [{idCliente, cantidadSopaipilla, hora2}])
+      }
+      
+    },
+})
+
+const UnDia = setTimeout(() => {
+  setInterval(() => {
+    console.log("Topic: Ventas")
+    console.log(VentasMap)  
+  }, 10000 )
+  
+}, 15000);
+
+let consultas = []
 consumerStock.run({
     eachMessage: async ({ topic, partition, message }) => {
+      consultas.push(message.value.toString())
+      if(consultas.length == 5 ){
+        consultas.forEach((value, index, array) =>{
+          const [idCarrito, stockRestante] = value.split("|")
+          if(stockRestante < 20) {
+            console.log({
+              topic,
+              value: `El carrito ${idCarrito} necesita reposicion de stock.`
+            })
+          }
+        })
+        consultas = []
+      }
+      /*
       console.log({
         topic: topic,
         partition: partition,
         value: message.value.toString(),
-      })
+      }) 
+      */
     }
 })
 
@@ -56,7 +95,6 @@ consumerCoor.run({
    
     carritos.set(idCarro, {ubicacionCarrito, timestamp} )
     carritos.forEach( (value, key, map) =>{
-      //console.log(dateNow, key, value['timestamp'])
       if(dateNow - timestamp > 60000 ){carritos.delete(key)}
     })
     
@@ -65,12 +103,3 @@ consumerCoor.run({
   }
 })
 
-consumerMiembro.run({
-  eachMessage: async ({ topic, partition, message }) => {
-    console.log({
-      topic: topic,
-      partition: partition,
-      value: message.value.toString(),
-    })
-  }
-})
