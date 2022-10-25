@@ -1,105 +1,96 @@
-import { Kafka, logLevel } from "kafkajs"
+import { consumerMiembro, consumerVentas, consumerCoor, consumerStock, inicializar} from "./src/crearConsumidores.js"
+import { procesamientoDia, procesamientoTiempoReal } from "./src/procesamientos.js"
 
-const host = process.env.KAFKA_HOST_IP
-
-const kafkaCli = new Kafka({
-    logLevel: logLevel.INFO,
-    brokers: [`${host}:9092`],
-    clientId: 'Cliente',
-})
-
-//Leemos los topics con 2 clientes distintos, para ambos y solo un topic
-const consumerVentas = kafkaCli.consumer({ groupId: 'group1' })
-const consumerStock = kafkaCli.consumer({ groupId: 'group2' })
-const consumerCoor = kafkaCli.consumer({groupId: 'group3'})
-const consumerMiembro = kafkaCli.consumer({groupId: 'group4'})
-
-await consumerVentas.connect()
-await consumerStock.connect()
-await consumerCoor.connect()
-await consumerMiembro.connect()
-
-await consumerVentas.subscribe({ topic: 'Ventas', fromBeginning: true })
-await consumerStock.subscribe({ topic: 'Stock', fromBeginning: false})
-await consumerCoor.subscribe({ topic: 'Coordenadas', fromBeginning: false})
-await consumerMiembro.subscribe({topic: 'Miembros', fromBeginning:true})
-
-consumerMiembro.run({
-  eachMessage: async ({ topic, partition, message }) => {
-    console.log({
-      topic: topic,
-      partition: partition,
-      value: message.value.toString(),
-    })
-  }
-})
-
-
-let timeStart = Date.now()
+const miembrosMap = new Map();
 const VentasMap = new Map();
-consumerVentas.run({
+let publicacionesStock = [];
+const carritosMap = new Map();
+const carritosProfugosMap = new Map();
+
+async function setupConsumidores (){
+  await inicializar()
+  consumerMiembro.run({
     eachMessage: async ({ topic, partition, message }) => {
-      const [idCarrito, idCliente, cantidadSopaipilla, hora2] = message.value.toString().split("|");
-      if(VentasMap.has(idCarrito)){
-        VentasMap.get(idCarrito).push({idCliente, cantidadSopaipilla, hora2})
-      }else{
-        VentasMap.set(idCarrito, [{idCliente, cantidadSopaipilla, hora2}])
-      }
+      const [Nombre, Apellido, Rut, Correo, Patente, Suscripcion] = message.value.toString().split("|")
+      miembrosMap.set(Patente, {Nombre, Apellido, Rut, Correo, Suscripcion})
       
-    },
-})
-
-const UnDia = setTimeout(() => {
-  setInterval(() => {
-    console.log("Topic: Ventas")
-    console.log(VentasMap)  
-  }, 10000 )
-  
-}, 15000);
-
-let consultas = []
-consumerStock.run({
-    eachMessage: async ({ topic, partition, message }) => {
-      consultas.push(message.value.toString())
-      if(consultas.length == 5 ){
-        consultas.forEach((value, index, array) =>{
-          const [idCarrito, stockRestante] = value.split("|")
-          if(stockRestante < 20) {
-            console.log({
-              topic,
-              value: `El carrito ${idCarrito} necesita reposicion de stock.`
-            })
-          }
-        })
-        consultas = []
-      }
-      /*
-      console.log({
-        topic: topic,
-        partition: partition,
-        value: message.value.toString(),
-      }) 
-      */
+      console.log(miembrosMap)
     }
-})
+  })
+  
+  
+  consumerVentas.run({
+      eachMessage: async ({ topic, partition, message }) => {
+        const [Patente, idCliente, cantidadSopaipilla, hora2] = message.value.toString().split("|");
+        if(miembrosMap.has(Patente)){
+          if(VentasMap.has(Patente)){
+            VentasMap.get(Patente).push({idCliente, cantidadSopaipilla, hora2})
+          }else{
+            VentasMap.set(Patente, [{idCliente, cantidadSopaipilla, hora2}])
+          }
+        }else{
+          console.log("Patente de miembro no registrada")
+        }
+      }
+  });
+  
+  consumerStock.run({
+      eachMessage: async ({ topic, partition, message }) => {
+        const Patente = message.value.toString().split("|")[0]
 
-const carritos = new Map()
-consumerCoor.run({
-  eachMessage: async ({ topic, partition, message }) => {
-    const mensaje = message.value.toString().split("|")
-    //console.log(mensaje)
-    const idCarro = mensaje[0]
-    const ubicacionCarrito = mensaje[1]
-    const timestamp = mensaje[2]
-    const dateNow = Date.now()
-   
-    carritos.set(idCarro, {ubicacionCarrito, timestamp} )
-    carritos.forEach( (value, key, map) =>{
-      if(dateNow - timestamp > 60000 ){carritos.delete(key)}
-    })
-    
-    console.log(carritos)
+        if(miembrosMap.hash(Patente)){
+          publicacionesStock.push(message.value.toString())
+          if(publicacionesStock.length == 5 ){
+            publicacionesStock.forEach((value, index, array) =>{
+              const [Patente, stockRestante] = value.split("|")
+              if(stockRestante < 20) {
+                console.log({
+                  topic,
+                  value: `El carrito ${Patente} necesita reposicion de stock.`
+                })
+                publicacionesStock.splice(index, 1)
+              }
+            })
+            publicacionesStock = []
+          }
+        }else{
+          console.log("Patente de miembro no registrada")
+        }
+      }
+  })
+  
+  
+  consumerCoor.run({
+    eachMessage: async ({ topic, partition, message }) => {
+      const mensaje = message.value.toString().split("|")
+      const Patente = mensaje[0]
+      const ubicacionCarrito = mensaje[1]
+      if(miembrosMap.has(Patente)){
+        if(partition == 0){
+          const timestamp = mensaje[2]
+          if(carritosProfugosMap.has(Patente)){carritosProfugosMap.splice(Patente, 1)}   
+          carritosMap.set(Patente, {ubicacionCarrito, timestamp} )
+        }else if(partition == 1){
+          if(carritosMap.has(Patente)){carritosMap.splice(Patente, 1)}   
+          carritosProfugosMap.set(Patente, ubicacionCarrito)
+        }
+      }else{
+        console.log("Patente de miembro no registrada")
+      }
 
-  }
-})
+  
+    }
+  })
+  procesamientoDia(VentasMap);
+  procesamientoTiempoReal(carritosMap, carritosProfugosMap)
+
+}
+
+setupConsumidores()
+
+
+
+
+
+
 

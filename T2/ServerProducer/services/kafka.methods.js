@@ -24,11 +24,11 @@ export async function createTopics(){
 
 }
 
-export async function publiclar({topic, message, time=0}){
+export async function publiclar({topic, message, time=0, partition=0}){
     const producer = kafka.producer()
     await producer.connect()
     if(time == 0){
-        await producer.send({topic, messages:[{value: message}]})
+        await producer.send({topic, messages:[{value: message, partition}]})
     }else{
         setInterval(async ()=> {
             await producer.send({
