@@ -37,7 +37,7 @@ export const RegistarVenta = async (req, res) => {
   if (
     req.body?.Patente &&
     req.body?.idCliente &&
-    req.body?.cantidadSopaipilla &&
+    req.body?.cantidadSopaipillas &&
     req.body?.stockRestante &&
     req.body?.ubicacionCarrito &&
     req.body?.metodoPago

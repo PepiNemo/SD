@@ -10,7 +10,7 @@ function estadisticasVentas(ventasMap){
     console.log(`Para el sopaipellero ${key} se tiene:`)
     console.log({
       "VentasTotales": ventasMap.size,
-      "PromedioVentas": (totalVentas / ventasMap.size),
+      "PromedioVentas": totalVentas / ventasMap.size,
       "ClientesTotales": clientes.size
     })
  
