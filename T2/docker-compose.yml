@@ -21,6 +21,7 @@ services:
     build: './ServerProducer'
     depends_on:
       - kafka
+      - zookeeper
     environment:
       - KAFKA_HOST_IP=kafka
     ports:

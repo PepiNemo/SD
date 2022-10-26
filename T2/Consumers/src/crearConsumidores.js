@@ -15,6 +15,7 @@ const consumer3 = kafkaCli.consumer({groupId: 'group3'})
 const consumer4 = kafkaCli.consumer({groupId: 'group4'})
 
 export async function inicializar(){
+    
     await consumerVentas.connect()
     await consumerStock.connect()
     await consumerCoor.connect()

@@ -24,7 +24,7 @@ export async function createTopics(){
 
 }
 
-export async function publiclar({topic, message, time=0, partition=0}){
+export async function publiclar({topic, message, time=0, partition}){
     const producer = kafka.producer()
     await producer.connect()
     if(time == 0){
