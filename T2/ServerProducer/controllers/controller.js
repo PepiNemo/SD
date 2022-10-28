@@ -94,7 +94,7 @@ export const CarritoProfugo = async (req, res) => {
     });
     return res
       .status(200)
-      .json({ message: `Reportando carrito profugo ${req.body.id} ` });
+      .json({ message: `Reportando carrito profugo ${req.body.ubicacionCarrito}` });
   } else {
     res
       .status(404)

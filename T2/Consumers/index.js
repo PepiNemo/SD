@@ -12,6 +12,12 @@ import {
   procesamientoTiempoReal,
 } from "./src/procesamientos.js";
 
+import { createWriteStream } from "fs"
+const dbMiembros = createWriteStream("./txt/miembros.txt", {flags: 'a'});
+const dbStock = createWriteStream("./txt/stock.txt", {flags: 'a'});
+const dbVentas = createWriteStream("./txt/ventas.txt", {flags: 'a'});
+export const dbCarrosProfugos = createWriteStream("./txt/carrosProfugos.txt", {flags: 'a'});
+
 const miembrosMap = new Map();
 const miembrosMapPremium = new Map();
 
@@ -29,8 +35,9 @@ async function setupConsumidores() {
 
   consumerMiembro.run({
     eachMessage: ({ topic, partition, message }) => {
-      const [Nombre, Apellido, Rut, Correo, Patente, Suscripcion] =
-        message.value.toString().split("|");
+      let mensaje = message.value.toString()
+      dbMiembros.write(mensaje)
+      const [Nombre, Apellido, Rut, Correo, Patente, Suscripcion] = mensaje.split("|");
       partition == 0
         ? miembrosMap.set(Patente, {
             Nombre,
@@ -51,8 +58,9 @@ async function setupConsumidores() {
 
   consumerVentas.run({
     eachMessage: async ({ topic, partition, message }) => {
-      const [Patente, idCliente, cantidadSopaipillas, hora2, metodoPago] =
-        message.value.toString().split("|");
+      let mensaje = message.value.toString();
+      dbVentas.write(`\n${mensaje}`)
+      const [Patente, idCliente, cantidadSopaipillas, hora2, metodoPago] = mensaje.split("|");
       if (miembrosMap.has(Patente) || miembrosMapPremium.has(Patente)) {
         if (partition == 0) {
           ventasMapEfectivo.has(Patente)
@@ -85,18 +93,20 @@ async function setupConsumidores() {
 
   consumerStock.run({
     eachMessage: async ({ topic, partition, message }) => {
-      const Patente = message.value.toString().split("|")[0];
+      let mensaje = message.value.toString()
+      dbStock.write(`\n${mensaje}`)
+      const Patente = mensaje.split("|")[0];
       if (miembrosMap.has(Patente) || miembrosMapPremium.has(Patente)) {
         partition == 0
           ? publicacionesStock.push(message.value.toString())
           : publicacionesStockCercanas.push(message.value.toString());
 
         if (publicacionesStock.length == 5) {
-          console.log("Stock 1");
+          console.log("Stock Lejano a la distribuidora");
           await procesamientoCincoMensajes(publicacionesStock);
           publicacionesStock = [];
         } else if (publicacionesStockCercanas.length == 5) {
-          console.log("Stock prioritario");
+          console.log("Stock Cercana a la Distribuidora");
           await procesamientoCincoMensajes(publicacionesStockCercanas);
           publicacionesStockCercanas = [];
         }
@@ -123,6 +133,7 @@ async function setupConsumidores() {
             carritosMap.delete(Patente);
           }
           carritosProfugosMap.set(Patente, ubicacionCarrito);
+          dbCarrosProfugos.write(`\n${Patente}|${ubicacionCarrito}`)
         }
       } else {
         console.log("Patente de miembro no registrada, Coordenadas");

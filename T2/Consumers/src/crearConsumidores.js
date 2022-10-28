@@ -22,7 +22,7 @@ export async function inicializar(){
     await consumerMiembro.connect()
 
     await consumerVentas.subscribe({ topic: 'Ventas', fromBeginning: true })
-    await consumerStock.subscribe({ topic: 'Stock', fromBeginning: false})
+    await consumerStock.subscribe({ topic: 'Stock', fromBeginning: true})
     await consumerCoor.subscribe({ topic: 'Coordenadas', fromBeginning: false})
     await consumerMiembro.subscribe({topic: 'Miembros', fromBeginning:true})
 }
