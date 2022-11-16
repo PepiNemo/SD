@@ -1,0 +1,39 @@
+version: "3"
+services:
+  zookeeper:
+    image: 'bitnami/zookeeper:latest'
+    environment:
+      - ALLOW_ANONYMOUS_LOGIN=yes
+    ports:
+      - "2181:2181"
+
+  kafka:
+    image: 'bitnami/kafka:latest'
+    ports:
+      - "9092:9092"
+    environment:
+      - KAFKA_CFG_ZOOKEEPER_CONNECT=zookeeper:2181
+      - ALLOW_PLAINTEXT_LISTENER=yes
+      - KAFKA_CFG_NUM_PARTITIONS=2
+    depends_on:
+      - zookeeper
+
+  serverproducer:
+    build: './ServerProducer'
+    depends_on:
+      - kafka
+      - zookeeper
+    environment:
+      - KAFKA_HOST_IP=kafka
+    ports:
+      - "3000:3000"
+
+
+  consumers:
+    build: './Consumers'
+    depends_on:
+      - serverproducer
+    environment:
+      - KAFKA_HOST_IP=kafka
+    volumes:
+      - ./txt:/app/txt

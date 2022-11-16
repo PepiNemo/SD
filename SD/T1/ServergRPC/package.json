@@ -1,0 +1,20 @@
+{
+  "name": "servergrpc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "servergRPC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node servergRPC.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.7.0",
+    "@grpc/proto-loader": "^0.7.2",
+    "dotenv": "^16.0.2",
+    "install": "^0.13.0",
+    "npm": "^8.19.2",
+    "pg": "^8.8.0"
+  }
+}

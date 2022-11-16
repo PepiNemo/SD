@@ -1,0 +1,59 @@
+version: '3'
+services:
+
+  client:
+    container_name: cliente-http
+    build: ./Cliente
+    depends_on:
+      - grpc_server
+      - redis
+    ports:
+      - "3000:3000"
+
+  redis:
+    container_name: cache-bitnami
+    image: bitnami/redis:6.2.6
+    ports:
+      - "8031:6379"
+    environment:
+      - REDIS_REPLICATION_MODE=master
+      - ALLOW_EMPTY_PASSWORD=yes
+    command: "/opt/bitnami/scripts/redis/run.sh --maxmemory 5mb --maxmemory-policy allkeys-lfu"
+
+  redis-replica:
+    image: 'bitnami/redis:6.2.6'
+    ports:
+      - '6379'
+    depends_on:
+      - redis
+    environment:
+      - REDIS_REPLICATION_MODE=slave
+      - REDIS_MASTER_HOST=redis
+      - REDIS_MASTER_PORT_NUMBER=6379
+      - ALLOW_EMPTY_PASSWORD=yes
+
+
+  grpc_server:
+    container_name: grpc-server
+    build: ./ServergRPC
+    depends_on:
+      - postgres
+    ports:
+      - "8030:8030"
+  
+  postgres:
+    image: docker.io/bitnami/postgresql:14
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRES_USERNAME = pipe
+      - POSTGRES_PASSWORD = SuperClave
+      - POSTGRES_DATABASE = links
+      - ALLOW_EMPTY_PASSWORD=yes
+    volumes:
+      - ./Database/db/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+
+
+#docker exec -it sd-postgres-1 psql -U postgres
+#dc up --build --scale redis=1 --scale redis-replica=3
