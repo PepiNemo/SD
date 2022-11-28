@@ -1,0 +1,147 @@
+El ratón o mouse (en inglés pronunciado /maʊs/) es un dispositivo apuntador utilizado para facilitar el manejo de un entorno gráfico en una computadora. Generalmente está fabricado en plástico, y se utiliza con una de las manos. Detecta su movimiento relativo en dos dimensiones por la superficie plana en la que se apoya, reflejándose habitualmente a través de un puntero, cursor o flecha en el monitor. El ratón se puede conectar de forma cableada (puertos PS/2 y USB), o inalámbricamente por medio de un adaptador USB que se conecta a la computadora y esta recibe la señal del ratón, aunque también pueden ser por medio de conectividad infrarroja o Bluetooth. 
+Es un periférico de entrada imprescindible en una computadora de escritorio para la mayoría de las personas, y pese a la aparición de otras tecnologías con una función similar, como la pantalla táctil, aún sigue siendo muy utilizado. Además de mover un cursor, el mouse tiene uno o más botones para permitir operaciones como la selección de un elemento de menú en una pantalla. El mouse también suele contar con otros elementos, como superficies táctiles y ruedas de desplazamiento, que permiten un control adicional y entrada dimensional.
+
+
+== Etimología ==
+
+Cuando se patentó recibió el nombre X-Y Position Indicator for a Display System (tdl. ‘indicador de posición X-Y para un sistema con pantalla’); el nombre «ratón» (mouse, en inglés) se lo dio el equipo de la Universidad Stanford durante su desarrollo, ya que su forma y su cable (que asemeja una cola) recuerdan a un ratón.[1]​
+En América predomina el calco léxico mouse (con el plural mouses), mientras que en España se utiliza prácticamente de manera exclusiva el calco semántico ratón.[2]​ El Diccionario de la lengua española únicamente acepta la entrada ratón para este dispositivo informático.[3]​ El Diccionario de americanismos de la ASALE, publicado en 2010, consigna el anglicismo mouse.[4]​ El Diccionario panhispánico de dudas remite mouse a ratón e indica que, al existir el calco semántico, es innecesario usar el anglicismo.[2]​
+
+
+== Historia ==
+Fue diseñado por Douglas Engelbart y Bill English durante los años 1960 en el Stanford Research Institute, un laboratorio de la Universidad Stanford, en pleno Silicon Valley en California. Más tarde fue mejorado en los laboratorios de Palo Alto de la compañía Xerox (conocidos como Xerox PARC). Con su aparición, logró también dar el paso definitivo a la aparición de los primeros entornos o interfaces gráficas de usuario.
+
+
+=== Primera maqueta ===
+
+La primera maqueta fue construida artesanalmente en madera, y se patentó con el nombre «X-Y Position Indicator for a Display System».
+A pesar de su aspecto arcaico, el funcionamiento básico sigue siendo igual hoy en día. Tenía un aspecto de adoquín, encajaba bien en la mano y disponía de dos ruedas metálicas que, al desplazarse por la superficie, movían dos ejes: uno para controlar el movimiento vertical del cursor en pantalla y el otro para el sentido horizontal, contando además con un botón rojo en su parte superior.
+Por primera vez se lograba un intermediario directo entre una persona y la computadora, era algo que, a diferencia del teclado, cualquiera podía aprender a manejar sin apenas conocimientos previos. En esa época además la informática todavía estaba en una etapa primitiva: ejecutar un simple cálculo necesitaba de instrucciones escritas en un lenguaje de programación.
+
+
+=== Presentación ===
+En San Francisco, el 9 de diciembre de 1968 se presentó públicamente el primer modelo oficial.[5]​ Durante hora y media además se mostró una presentación multimedia de un sistema informático interconectado en red de computadoras, llamado NLS (oNLine System), y también por primera vez se daba a conocer un entorno gráfico con el sistema de ventanas que luego adoptarían la práctica totalidad de sistemas operativos modernos. En ese momento, además, se exhibió hipermedia, un mecanismo para navegar por Internet, los editores de texto digital y las videoconferencias.[6]​
+Engelbart realmente se adelantó varias décadas a un futuro posible, ya desde 1951 había empezado a desarrollar las posibilidades de conectar computadoras en redes, cuando apenas existían varias docenas y bastante primitivas, entre otras ideas como el propio correo electrónico, del que sería su primer usuario. Pensó que la informática podía usarse para mucho más que cálculos matemáticos, y el ratón formaba parte de este ambicioso proyecto, que pretendía aumentar la inteligencia colectiva fundando el Augmentation Research Center (Centro para la Investigación del Incremento) en la Universidad de Stanford.
+Y pese a las esperanzas iniciales de Engelbart de que fuera la punta del iceberg para un desarrollo de distintos componentes informáticos similares, una década después era algo único, revolucionario, que todavía no había cobrado popularidad. De hecho varios de los conceptos e ideas surgidos aún hoy en día han conseguido éxito. Engelbart tampoco logró una gran fortuna, la patente adjudicaba todos los derechos a la Universidad de Stanford y él recibió un cheque de unos 10 000 dólares.
+
+
+=== Caso de éxito ===
+
+El 27 de abril de 1981 se lanzaba al mercado la primera computadora con ratón incluido: Xerox Star 8010, fundamental para la nueva y potente interfaz gráfica que dependía de este periférico, que fue a su vez, otra revolución. Posteriormente, surgieron otras computadoras que también incluyeron el periférico, algunas de ellas fueron la Commodore Amiga, el Atari ST, y la Apple Lisa. Dos años después, Microsoft, que había tenido acceso al ratón de Xerox en sus etapas de prototipo, dio a conocer su propio diseño disponible además con las primeras versiones del procesador de texto Microsoft Word. Tenía dos botones en color verde y podía adquirirse por 195 dólares, pero su precio elevado para entonces y el no disponer de un sistema operativo que realmente lo aprovechara, hizo que pasara completamente inadvertido.
+Este periférico se popularizó con la aparición de la computadora Macintosh, en 1984. Su diseño y creación corrió de nuevo a cargo de la Universidad de Stanford, cuando Apple en 1980 pidió a un grupo de jóvenes un periférico seguro, barato y que se pudiera producir en serie. Partían de un ratón basado en tecnología de Xerox de un coste alrededor de los 400 dólares, con un funcionamiento regular y casi imposible de limpiar. Steve Jobs, quería un precio entre los 10 y los 35 dólares.
+Si bien existen muchas variaciones posteriores, algunas innovaciones recientes y con éxito han sido el uso de una rueda de desplazamiento central o lateral, el sensor de movimiento óptico por diodo led, ambas introducidas por Microsoft en 1996 y 1999 respectivamente, o el sensor basado en un láser no visible del fabricante Logitech.
+En la actualidad, la marca europea Logitech es una de las mayores empresas dedicadas a la fabricación y desarrollo de estos periféricos, más de la mitad de su producción la comercializa a través de terceras empresas como IBM, Hewlett-Packard, Compaq o Apple.
+
+
+== Actualidad ==
+
+El ratón se compone habitualmente de al menos dos botones y otros dispositivos opcionales como una rueda, más otros botones secundarios o de distintas tecnologías como sensores del movimiento que pueden mejorar o hacer más cómodo su uso.
+Se suele presentar para manejarse con ambas manos por igual, pero algunos fabricantes también ofrecen modelos únicamente para usuarios diestros o zurdos. Los sistemas operativos pueden también facilitar su manejo a todo tipo de personas, generalmente invirtiendo la función de los botones.
+En los primeros años de la informática, el teclado era el dispositivo más popular para la entrada de datos o control de la computadora. La aparición y éxito del ratón, además de la posterior evolución de los sistemas operativos, logró facilitar y mejorar la comodidad, aunque no relegó el papel primordial del teclado. Aún hoy en día, pueden compartir algunas funciones, dejando al usuario que escoja la opción más conveniente a sus gustos o tareas.
+Con el avance de las nuevas computadoras, el ratón se ha convertido en un dispositivo esencial a la hora de jugar, destacando no solo para seleccionar y accionar objetos en pantalla en juegos estratégicos, sino para cambiar la dirección de la cámara o la dirección de un personaje en juegos de primera o tercera persona. Comúnmente en la mayoría de estos juegos los botones del ratón se utilizan para accionar las armas u objetos seleccionados y la rueda del ratón sirve para recorrer los objetos o armas de nuestro inventario.
+Con la llegada de las tabletas y el sistema operativo Windows 8, orientado hacia lo táctil, si es un éxito seguramente el ratón en su forma clásica se vea seriamente amenazado y le siga toda una revolución en estos accesorios.[7]​
+
+
+== Funcionamiento ==
+
+El funcionamiento de un ratón depende de la tecnología utilizada para capturar el movimiento al ser desplazado sobre una superficie plana o alfombrilla especial para ratón, y transmitir esta información para mover una flecha o puntero sobre el monitor de la computadora. Dependiendo de las tecnologías empleadas en el sensor del movimiento o por su mecanismo y del método de comunicación entre este y la computadora, existen multitud de tipos o familias.
+El objetivo principal o más habitual es seleccionar distintas opciones que pueden aparecer en la pantalla, con uno o dos clics, mediante pulsaciones en algún botón o botones. Para su manejo, el usuario debe acostumbrarse tanto a desplazar el puntero como a pulsar con uno o dos clics para la mayoría de las tareas.
+
+
+== El controlador ==
+Es, desde hace un tiempo, común en cualquier equipo informático, de tal manera que todos los sistemas operativos modernos suelen incluir de serie un controlador software básico para que este pueda funcionar de manera inmediata y correcta. No obstante, es normal encontrar software propio del fabricante que puede añadir una serie de funciones opcionales, o propiamente los controladores si son necesarios.
+
+
+== Uno, dos, tres o cuatro botones ==
+
+		
+		
+Hasta mediados de 2005, la empresa Apple, para sus sistemas Mac apostaba por un ratón de un solo botón, pensado para facilitar y simplificar al usuario las distintas tareas posibles. Actualmente ha lanzado un modelo con dos botones simulados virtuales con sensores debajo de la cubierta plástica, dos botones laterales programables, y una bola para mover el puntero, llamado Mighty Mouse.
+En Windows, lo más habitual es el uso de dos o tres botones principales. En sistemas Unix como GNU/Linux que utilicen entorno gráfico (X Window), era habitual disponer de tres botones (para facilitar la operación de copiar y pegar datos directamente). En la actualidad la funcionalidad del tercer botón queda en muchos casos integrada en la rueda central de tal manera que además de poder girarse, puede pulsarse.
+Hoy en día cualquier sistema operativo moderno puede hacer uso de hasta estos tres botones distintos e incluso reconocer más botones extra a los que el software reconoce, y puede añadir distintas funciones concretas, como por ejemplo asignar a un cuarto y quinto botón la operación de copiar y pegar texto.
+La sofisticación ha llegado a extremos en algunos casos, por ejemplo el MX610 de Logitech, lanzado en septiembre de 2005. Preparado anatómicamente para diestros, dispone de hasta 10 botones.
+
+
+== Tipos o modelos ==
+
+		
+		
+		
+		
+
+
+=== Por mecanismo ===
+
+
+==== Mecánico ====
+
+Tienen una esfera de plástico o goma, de varias capas, en su parte inferior para mover dos ruedas que generan pulsos en respuesta al movimiento de este sobre la superficie. Una variante es el modelo de Honeywell que utiliza dos ruedas inclinadas noventa grados entre ellas en vez de una esfera.
+La circuitería interna cuenta los pulsos generados por la rueda y envía la información al ordenador, que mediante soporte lógico procesa e interpreta.
+
+
+==== Óptico ====
+Es una variante que carece de la bola de goma que evita el frecuente problema de la acumulación de suciedad en el eje de transmisión, y por sus características ópticas es menos propenso a sufrir un inconveniente similar. Se considera uno de los más modernos y prácticos actualmente. Puede ofrecer un límite de 800 ppp, como cantidad de puntos distintos que puede reconocer en 2,54 centímetros (una pulgada); a menor cifra peor actuará el sensor de movimientos. Su funcionamiento se basa en un sensor óptico que fotografía la superficie sobre la que se encuentra y detectando las variaciones entre sucesivas fotografías, se determina si el ratón ha cambiado su posición. En superficies pulidas o sobre determinados materiales brillantes, el ratón óptico causa movimiento nervioso sobre la pantalla, por eso se hace necesario el uso de una alfombrilla de ratón o superficie que, para este tipo, no debe ser brillante y mejor si carece de grabados multicolores que puedan «confundir» la información luminosa devuelta.
+
+
+==== Láser ====
+Este tipo es más sensible y preciso, haciéndolo aconsejable especialmente para los diseñadores gráficos y los jugadores de videojuegos. También detecta el movimiento deslizándose sobre una superficie horizontal, pero el haz de luz de tecnología óptica se sustituye por un láser con resoluciones a partir de 2000 ppp, lo que se traduce en un aumento significativo de la precisión y sensibilidad.
+
+
+==== Bola de seguimiento ====
+
+El concepto de bola de seguimiento es una idea que parte del hecho: se debe mover el puntero, no el dispositivo, por lo que se adapta para presentar una bola, de tal forma que cuando se coloque la mano encima se pueda mover mediante el dedo pulgar, sin necesidad de desplazar nada más ni toda la mano como antes. De esta manera se reduce el esfuerzo y la necesidad de espacio, además de evitarse un posible dolor de antebrazo por el movimiento de este. A algunas personas, sin embargo, no les termina de resultar realmente cómodo. Este tipo ha sido muy útil por ejemplo en la informatización de la navegación marítima.
+
+
+==== Multitáctil ====
+El principal ejemplo de los ratones táctiles es el Magic Mouse de Apple, y están diseñados con una carcasa superior de una pieza. Su superficie es lisa, sin botones, ya que se trata de una zona multitáctil en el que todo el ratón hace de botón y lo puedan usar tanto los diestros como los zurdos.
+
+
+=== Por conexión ===
+
+
+==== Cableado ====
+
+Es el formato más popular y más económico, sin embargo, existen multitud de características añadidas que pueden elevar su precio, por ejemplo si hacen uso de tecnología láser como sensor de movimiento. En el correr de la primera década del siglo XXI se distribuyen con dos tipos de conectores posibles, tipo USB y PS/2; antiguamente también era popular usar el puerto serie.
+Es el preferido por los videojugadores experimentados, ya que la velocidad de transmisión de datos por cable entre el ratón y la computadora es óptima en juegos que requieren de una gran precisión.
+
+
+==== Inalámbrico ====
+En este caso el dispositivo carece de un cable que lo comunique con la computadora, en su lugar utiliza algún tipo de tecnología inalámbrica. Para ello requiere un receptor que reciba la señal inalámbrica que produce, mediante baterías, el ratón. El receptor normalmente se conecta a la computadora a través de un puerto USB. Según la tecnología inalámbrica usada pueden distinguirse varias posibilidades:
+
+Radiofrecuencia: es el tipo más común y económico de este tipo de tecnologías. Funciona enviando una señal a una frecuencia de 2.4 GHz, popular en la telefonía móvil, la misma que los estándares IEEE 802.11b y IEEE 802.11g. Es popular, entre otras cosas, por sus baja tasa de desconexión y pocas interferencias con otros equipos inalámbricos, además de disponer de un alcance suficiente de hasta 10 metros.
+Infrarrojo: esta tecnología utiliza una señal de onda infrarroja como medio de transmisión de datos, popular también entre los controles o mandos remotos de televisiones, equipos de música o en telefonía celular. A diferencia de la anterior, tiene un alcance medio inferior a los tres metros, y tanto el emisor como el receptor deben estar en una misma línea visual de contacto directo ininterrumpido para que la señal se reciba correctamente. Por ello su éxito ha sido menor, llegando incluso a desaparecer del mercado.
+Bluetooth esta tecnología es la más reciente como transmisión inalámbrica (estándar IEEE 802.15.1), que cuenta con cierto éxito en otros dispositivos. Su alcance es de unos 10 metros (que corresponde a la Clase 2 del estándar Bluetooth).
+
+
+== Problemas frecuentes ==
+
+Puntero que se atasca en la pantalla: es el fallo más frecuente, se origina a causa de la acumulación de suciedad, frenando o dificultando el movimiento del puntero en la pantalla. Puede retirarse fácilmente la bola de goma por la parte inferior y así acceder a los ejes de plástico para su limpieza, usando un pequeño pincel de cerdas duras. Para retardar la aparición de suciedad en el interior del ratón es recomendable usar una alfombrilla de ratón. Este problema es inexistente con tecnología óptica, ya que no requiere partes mecánicas para detectar el desplazamiento. Es uno de los principales motivos de su éxito.Pérdida de sensibilidad o contacto de los botones: se manifiesta cuando se pulsa una vez un botón y la computadora lo recibe como ninguno, dos o más clics consecutivos, de manera errónea. Esto se debe al desgaste de las piezas de plástico que forman parte de los botones del ratón, que ya no golpean o pulsan correctamente sobre el pulsador electrónico. En caso de uso frecuente, el desgaste es normal, y suele darse a una cifra inferior al milímetro por cada cinco años de vida útil.Dolores musculares causados por el uso del ratón: si el uso de la computadora es frecuente, es importante usar un modelo lo más ergonómico posible, ya que puede acarrear problemas físicos en la muñeca o brazo del usuario (síndrome del túnel carpiano). Esto es por la posición totalmente plana que adopta la mano, que puede resultar forzada, o puede también producirse un fuerte desgaste del huesecillo que sobresale de la muñeca, hasta el punto de considerarse una enfermedad profesional. Existen alfombrillas de ratón especialmente diseñadas para mejorar la comodidad al usar el ratón.
+
+
+== Véase también ==
+Alfombrilla de ratón
+Arrastrar y soltar
+Clic (informática)
+Cursor (informática)
+Dispositivo apuntador
+Doble clic
+Lápiz óptico
+Panel táctil
+Rueda de desplazamiento
+Desplazamiento
+Síndrome del túnel carpiano
+Tableta digitalizadora
+Trackball
+
+
+== Referencias ==
+
+
+== Enlaces externos ==
+ Wikimedia Commons alberga una galería multimedia sobre Ratón.
+Alberto de las Fuentes (20 de diciembre de 1998). «El ratón cumple 30 años». El Mundo. Consultado el 29 de junio de 2015. 
+Alex Soojung-Kim Pang (marzo/abril de 2002). «Mighty Mouse». Stanford Magazine (en inglés). Consultado el 29 de junio de 2015. 
+Primera aparición pública del mouse en YouTube.
+«STIM - MouseSite» (en inglés). Consultado el 29 de junio de 2015. «Los primeros modelos de ratón ». 
+Esquema adaptador ratón USB a PS/2
+Esquema adaptador ratón serie a PS/2

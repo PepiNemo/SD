@@ -1,0 +1,160 @@
+La marca Intel Core 2 se refiere a una gama de CPU comerciales de Intel de 64 bits de doble núcleo y CPU 2x2 MCM (Módulo Multi-Chip) de cuatro núcleos con el conjunto de instrucciones x86-64, basado en el Core microarchitecture de Intel, derivado del Procesador portátil de doble núcleo de 32 bits Yonah.[Nota 1]​ El CPU 2x2 MCM de cuatro núcleos[1]​ tenía dos matrices separadas de dos núcleos (CPU) -uno junto al otro- en un paquete MCM de cuatro núcleos. El Core 2 relegó la marca Pentium a un mercado de gama medio-bajo, y reunificó las líneas de sobremesa y portátiles, las cuales previamente habían sido divididas en las marcas Pentium 4, D, y M.
+Intel regresó a velocidades de CPU bajas y mejoró el uso del procesador de ambos ciclos de velocidad y energía comparados con anteriores NetBurst de los CPU Pentium 4/D[2]​ La microarquitectura Core provee etapas de decodificación, unidades de ejecución, caché y buses más eficientes, reduciendo el consumo de energía de CPU Core 2, mientras se incrementa la capacidad de procesamiento. Los CPU de Intel han variado muy bruscamente en consumo de energía de acuerdo a velocidad de procesador, arquitectura y procesos de semiconductor, mostrado en las tablas de disipación de energía del CPU
+La marca Core 2 fue introducida el 27 de julio de 2006,[3]​ abarcando las líneas Solo (un núcleo), Duo (doble núcleo), Quad (cuádruple núcleos), y Extreme (CPU de dos o cuatro núcleos para entusiastas), durante el 2007.[4]​ Los procesadores Intel Core 2 con tecnología vPro (diseñados para negocios) incluyen las ramas de doble núcleo y cuatro núcleos.[5]​
+
+
+== Duo, Quad, y Extreme ==
+Los CPU de marca Core 2.04 incluyen: triple núcleo (para sobremesas de gama alta y baja ), "Merom" (doble núcleo para portátiles), "Kentsfield" (cuatro núcleos para sobremesas), y sus variantes llamadas "Penryn" (doble núcleo para portátiles), "Wolfdale" (doble núcleo para sobremesas, doble núcleo de gama baja para sobremesas) y "Yorkfield" (cuatro núcleos para sobremesas).[Nota 2]​
+Los procesadores Core 2 poseen la Virtualization Technology -tecnología de virtualización- (excepto los modelos T52x0, T5300, T54x0, T55x0 "B2", E2xx0, T2300E, E4x00, E7x00 y E8190), Execute Disable Bit, y SSE3. Su microarquitectura Core introdujo también SSSE3, Trusted Execution Technology, Enhanced SpeedStep, y Active Management Technology (iAMT2).  Con un Thermal Design Power (TDP) hasta de solo 65 W, el Core 2 Conroe de doble núcleo consumió solo la mitad de la energía de los chips de Pentium D menos capaces pero también doble núcleo[6]​ con un TDP hasta de 130 W[7]​ (un TDP alto requiere enfriamiento adicional que puede ser ruidoso o caro).
+Siendo típico para los CPU, los CPU Core 2 Duo E4000/E6000, Core 2 Quad Q6600, Core 2 Extreme doble núcleo X6800, y cuatro núcleos QX6700 y QX6800 fueron la  mitad de la energía de los chips afectados por errores de software menores[8]​
+
+
+== Núcleos ==
+
+
+=== Conroe ===
+El primer núcleo de procesador de la mo de producto de Intel 80557, fue lanzado el 27 de julio de 2006 en Fragapalooza, un evento lúdico anual en Edmonton, Alberta, Canadá. Estos procesadores fueron fabricados en placas de 300mm usando un proceso de manufacturación de 65nm, y optimizados para ordenadores de sobremesa, reemplazando las CPU Pentium 4 y Pentium D. Intel ha declarado que el núcleo Conroe proporciona un 40% más de potencia con un consumo un 40% menor. Todos los núcleos Conroe son fabricados con 4 MiB de caché de nivel 2(L2), en cualquier caso debido a defectos de fabricación o para hacer más rentable su comercialización, las versiones E6300 y E6400 basados en este núcleo, tienen  la mitad de su caché deshabilitada, dejándolos con solo 2  MiB útiles de caché de nivel 2. Las CPU E6300 y E6400 basados en el núcleo Conroe tienen el B2 con stepping (secuenciación).
+Los modelos altos de la gama, E6300 (1,86 GHz) y E6400 (2,13 GHz) ambos con un FSB de 1066 MHz fueron presentados el 27 de julio de 2006. 
+Tradicionalmente, las CPU de la misma familia con menor caché simplemente tienen la caché restante deshabilitada, permitiendo su venta un precio más bajo debido a estas taras. De este modo  las mejoras se reducen a reemplazarlos por versiones que solo tienen la caché que se necesita en el núcleo idéntico, para abaratar los costes de producción. 
+En su lanzamiento, el precio de Intel para los procesadores core 2 Duo E6300 y E6400 fueron de  183 y 224 dólares americanos respectivamente. Las CPU Conroe tienen mejores prestaciones sobre los modelos anteriores con velocidades de procesamiento similares. Según las revisiones, la mayor caché de 4 MiB de nivel 2 contra la menor caché de 2 MiB L2 a la misma frecuencia y el mayor FSB pueden proveer de un beneficio de funcionamiento del 0-9% en algunas aplicaciones y del 0-16% para algunos juegos.[9]​
+
+Los modelos Core 2 Duo Conroe de gama alta son los E6600 (2,4 GHz) y E6700 (2,67 GHz). La familia tiene 1066 MT/s de FSB, 4 MiB de caché L2 y 65 W de consumo. Estos procesadores se enfrentaron a los procesadores de gama alta disponibles de AMD (Athlon serie 64 fx) que fueron, antes de la última presentación de Intel, las CPU más rápidas disponibles. 
+Los chips Conroe también experimentan una temperatura de salida mucho menor que sus predecesores - un beneficio de la nueva tecnología de 65 nm y la más eficiente microarquitectura. En su lanzamiento, el precio de Intel para los procesadores Core 2 Duo E6600 y E6700 fueron de 316 y 530 US$ respectivamente.
+Las CPU Conroe E6320 y E6420 a 1,86 y 2,13 GHz respectivamente fueron presentadas el 22 de abril de 2007 contando con una caché completa de 4 MiB.
+Intel lanzó 4 procesadores Core 2 Duo adicionales el 22 de julio de 2007. Este lanzamiento coincidió con el de los chipsets Intel Bearlake(x3x). Los nuevos procesadores Core 2 Duo fueron llamados E6540, E6550, E6750 y E6850. Los procesadores cuyo número de serie termina en 50 tienen 1333 MT/s de FSB. Todos ellos cuentan con 4 MiB de caché L2. La frecuencia de reloj es similar a los procesadores ya presentados con los 2 primeros dígitos iguales (E6600, E6700, X6800). Una parte de Intel confió en la tecnología de ejecución y el soporte vPro. Estos procesadores fueron criticados frente a la línea de procesadores AMD Stars y como consecuencia el precio bajó en los procesadores con 1066 MB/s de FSB.
+Intel ha aclarado que los modelos E6300 y el E6400 son núcleos Conroe con la caché deshabilitada. El núcleo Allendale es de la serie de las CPU E4xx0.
+
+
+=== Conroe XE ===
+El núcleo Core 2 Extreme fue oficialmente presentado el 29 de julio de 2006. Sin embargo, algunos minoristas lo presentaron el 13 de julio de 2006 como una mayor primicia. Los modelos E6x00, los Core 2 Duo menos potentes, fueron programados para ser presentados simultáneamente con el X6800, ambos disponibles en este momento. Potenciados con el núcleo Conroe XE, reemplazan al núcleo dual de los procesadores de la edición Pentium Extreme Edition. Los Core 2 Extreme tienen una velocidad de reloj de 2,93 GHz y 1066 MT/s de FSB a pesar de que inicialmente se esperaba lanzarlos con 3,3 GHz y 1333 MT/s. El consumo de energía para esta familia es de 75 hasta 80 W. Con SpeedStep[1] habilitado, la temperatura de la CPU en funcionamiento es básicamente igual a la temperatura ambiente.
+El precio de lanzamiento de Intel para los Core 2 Extreme X6800 fue de US$999 cada uno en cantidades de 1000. Como la plataforma Core 2 Duo, este tuvo una caché L2 compartida de 4 MiB. Esto significa que la única diferencia entre el Core 2 Duo y el Core 2 extreme es la velocidad de reloj y el multiplicador abierto, ventajas normales de la edición Extreme. El multiplicador ascendente desbloqueado es solo para entusiastas o profesionales porque permite al usuario poner la velocidad de reloj más alta que la carga de la frecuencia sin modificar el FSB a diferencia de los modelos Core 2 Duo que solo permiten desbloquear el factor descendiente.
+
+
+=== Conroe L ===
+El Conroe-L Celeron es un procesador de núcleo simple construido con la micro arquitectura de Intel Core y con una frecuencia de reloj mucho menor a la del Cedar Mill Celeron,  pero aún los supera en rendimiento. Está basado en los 65nm del núcleo Conroe-L y usa un modelo de secuencia de la serie 400, los FSB fueron incrementados de 533 MT/s a 800 MT/s en esta generación, y el consumo energético se decrementó de 65 W a 35 W. Tradicionalmente los Celeron, no poseen el soporte para las instrucciones Intel VT. Todos los modelos Conroe-L son procesadores de núcleo simple son destinados al segmento de valor de mercado, donde gustan más los AMD basados en el núcleo K8-Sempron. Esta línea de productos fue lanzada el 5 de junio de 2007.
+El 21 de octubre de 2007, Intel presentó un nuevo procesador para su serie de placas madres Intel Essential. El nombre completo del procesador es Celeron 220 y esta soldado a una placa base D201GlY2. Con 1,2 GHz y 512 KiB de caché (L2), posee un consumo energético de 19 W y puede hacer uso de refrigeración pasiva. El Celeron 220 es el sucesor del Celeron 215 que está basado en un núcleo Yonah y usado en la placa base D201GlY. Este procesador es usado exclusivamente en las placas Mini-ITX[2] apuntando al segmento de mercado de subvalor.[10]​
+
+
+=== Allendale ===
+Había discusión sobre la disponibilidad del modelo de procesadores Core 2 Duo para sobremesas (desktop) (E6300 a 1,86 GHz y E6400 a 2,13 GHz ambos con caché de 2 MiB L2) ambos provistos de un núcleo Allendale. Antes del Q1 de 2007, todos los procesadores E6300 y E6400 que aparecieron eran núcleos Conroe (4 MiB de caché L2) que tienen la mitad de su caché de nivel 2 deshabilitada. El núcleo Allendale se fabrica con 2 MiB de caché en total, ofreciendo un tamaño más pequeño y producciones por lo tanto mayores.
+Extracto de The Tech Report:
+«Existen muchas fuentes que afirman que el nombre en código para los procesadores Intel Core 2 Duo con 2 MiB de caché L2 es Allendale, pero Intel los llama de otra manera. Estas CPU todavía son Conroe, lo cual posee sentido, ya que utilizan los mismos chips con la mitad de su caché L2 deshabilitada. Intel bien puede trabajar con un chip Allendale con 2 MiB de caché L2 nativa, 
+pero esto no es lo típico para este chip».[11]​
+Otra diferencia entre la serie Premium E6000 (núcleo Conroe) y la serie e4000 (núcleo Allendale) está en la frecuencia de reloj del bus norte. La serie E4000 es capaz de trabajar con un FSB de 200 MHz quad-pumped (consultar Pumping) a 800 MT/s, mientras que la serie E6000 trabaja con un bus norte de 266  MHz quad-pumped a 1066 MT/s. La serie E4000 sólo posee una carencia en cuanto al soporte para las instrucciones VT de Intel
+El Core 2 Duo E4300 utiliza un núcleo Allendale y fue lanzado el 21 de enero de 2007. Los procesadores Allendale usan una máscara menor con solo 2 MiB de caché, incrementando el número de transistores por sector.
+Los procesadores Allendale son producidos según el factor de forma LGA775 [3], sobre un nodo de 65nm. Las CPU E6300 y E6400 se han fabricado sobre la base de un Conroe de 4 MiB de caché y un Allendale de 2 MiB. La secuenciación es distinta según el chip usado, los basados en Conroe usan secuenciación B2 y los basados en Allendale, usan L2.
+El precio por procesador fue inicialmente de 163 dólares americanos para el E4300. El precio estándar para venta OEM era de 175 dólares americanos, y 189 para el paquete retail. El 22 de abril de 2007 el precio fue rebajado hasta los 133 dólares para el E4400 y 113 dólares para el E4300. Los procesadores Allendale con media caché L2 deshabilitada fueron lanzados a mediados de junio de 2007 bajo el nombre Intel Pentium Dual-Core. La caché útil fue reducida a la mitad otra vez cuando el núcleo Allendale fue lanzado bajo el nombre Intel Celeron; el Celeron E1200 tiene 512  KiB de caché L2 compartida entre sus dos núcleos.
+El 22 de julio de 2007, fue lanzado el Allendale E4500, retirando progresivamente al modelo E4300. Esto fue acompañado de una rebaja en el precio del modelo E4400.
+
+
+=== Merom ===
+Merom, la primera versión portátil del Core 2, fue oficialmente presentada el 27 de julio de 2006 pero silenciosamente comenzó a llegar a manos de los fabricantes de PC a mediados de julio junto al núcleo Conroe.[12]​ Merom se hizo con la primera línea de Intel de procesadores para portátiles, con los mismos rasgos de Conroe, pero con más énfasis sobre el consumo de electricidad bajo para mejorar la duración de la batería del portátil. El núcleo Merom basado en Core 2 Duo proporciona un leve aumento de rendimiento con renderización 3D y medios codificadores, manteniendo la misma duración de la batería que el núcleo Yonah basado en Intel Core Duo. Merom es el primer procesador de Intel para portátiles que implementa la arquitectura Intel 64.
+La primera versión del Merom es compatible con la plataforma Napa de Intel Core Duo, siendo necesaria la actualización de la BIOS. Posee un consumo energético similar de 34 W y un FSB de 667 MHz. El chip Merom incorpora 4 MiB de caché L2, la mitad de ésta desactivada en la serie T5xx0. 
+Una versión del Merom con 2 MiB de cache L2 nativos, llamada Merom-2M, fue lanzada al mercado a principios de 2007. El núcleo Merom-M2 usa secuenciación L2 y M0; las versiones con voltaje extremadamente bajo del Core 2 Duo incorporan este núcleo.
+Una segunda oleada de microprocesadores Merom que incorporaban un FSB de 800 MHz y usaban el nuevo Socket P fue lanzada el 9 de mayo de 2007. Estos chips forman parte de la plataforma Santa Rosa. Versiones de bajo voltaje fueron lanzadas el 9 de mayo de 2007.
+El primer Core 2 Solo fue lanzado en el tercer trimestre de 2007; se trataba de los chips U2100 y U2200, que corren a 1,6 y 1,2 GHz respectivamente. Ambos incorporan un FSB de 533 MHz y forman parte de la familia Intel ULW, consumiendo apenas 5W, y soportan 64 bits, como el resto de la familia. Fueron lanzados con compatibilidad para la plataforma Napa en detrimento de la plataforma Santa Rosa debido a términos de consumos.
+Merom es una palabra hebrea que designa un plano superior en existencia al cielo, BaMerom significa en los cielos. El nombre fue escogido por el equipo de Intel en Haifa, Israel, quienes diseñaron este procesador.
+Consulte la sección Merom en la lista de procesadores Intel Core 2.
+
+
+=== Merom XE ===
+El procesador Core 2 Extreme Mobile, basado en el núcleo Merom XE, es un procesador para portátil de alto rendimiento. Lanzado en dos modelos, el X7900 y el X7800, incorpora un FSB a 800 MHz. El X7800, lanzado el 16 de julio de 2007,[13]​ corre a 2,6 GHz y cuesta alrededor de 851 dólares americanos para instalaciones de fábrica. Este procesador incorpora un consumo energético de 44 W y está incluido en nueva plataforma Intel Centrino (Santa Rosa). El X7900, lanzado el 22 de agosto de 2007, corre a 2,8 GHz.
+El X7900 fue incorporado en los MacBook de venta al público lanzados el 7 de agosto de 2007.
+
+
+=== Kentsfield ===
+El Kentsfield, lanzado el 2 de noviembre de 2006, fue el primer procesador de cuatro núcleos de Intel para sobremesas, denominado Core 2 Quad(y Xeon, para servidores y estaciones de trabajo). El tope de gama Kentsfield era un Core 2 Extreme numerado QX6xx0. Todos ellos incorporaban dos cachés de 4 MiB L2. El buque insignia, en Core 2 Quad Q6600, que corre a 2,4 GHz, fue lanzado el 8 de enero de 2007 al precio de US$ 851 (reducidos a 530 el 7 de abril de 2007). El 22 de julio de 2007 fue la fecha elegida para el lanzamiento del Q6700 junto con el Extreme QX6850, ambos del tipo Kentsfield, al precio de US$ 530 y 999 respectivamente, y conjuntamente a una bajada de precio del Q6600 hasta los 267 dólares.
+De manera análoga a los núcleos denominados Pentium D, los Kentsfield conjuntaban dos chips, cada uno de ellos equivalente a un Core 2 Duo, sobre un MCM. Esto repercutía sobre el precio final, reduciéndolo, pero con un peor tratamiento de datos sobre el puente norte comparado con una arquitectura de chips independientes, como es el caso de los AMD Quad FX. Además, como pudo predecirse por la configuración MCM, las potencias máximas de los Kentsfield (QX6800 – 130 W, QX6700 – 130 W,] Q6600 – 105 W) eran el doble de sus equivalentes en velocidad Core 2 Duo.
+Los múltiples núcleos de los Kentsfield permitían una mejora sobre aplicaciones cuya descomposición es más fácil (como es el caso de la transcodificación de audio y video, compresión de datos, edición de video, renderizado 3D y trazado de rayos). Por concretar un ejemplo, los videojuegos multitarea como Crysis y Gears of War que deben ejecutar múltiples tareas simultáneas como la inteligencia artificial, audio y físicas del juego se benefician de los cuatro núcleos. En muchos casos, la velocidad de proceso puede verse mejorada en función de la disponibilidad de múltiples núcleos. Esto debería ser considerado a la hora de limitar el número de núcleos en los procesadores presuponiendo el nivel de desarrollo del software de usuario. 
+Retomando el ejemplo, algunas pruebas han demostrado que Crysis falla al intentar aprovecharse de más de dos núcleos simultáneamente. Por otra parte, el impacto de esta característica sobre el rendimiento general del sistema puede verse significativamente reducido en sistemas que trabajen frecuentemente con tareas no relacionadas entre ellas como sistemas multiusuario o entornos que ejecuten tareas en segundo plano mientras el usuario se encuentra activo. Todavía existen sobrecargas relacionadas con la ejecución de múltiples procesos o tareas y su coordinación a la hora de distribuir la carga en varias CPU. Finalmente, a nivel de hardware, existen problemas de comunicación y acceso a recursos por ejemplo en la ejecución de tareas que acceden simultáneamente a memoria o a recursos de entrada y salida.
+
+
+=== Kentsfield XE ===
+El primer Kentsfield XE, denominado Core 2 Extreme QX6700 (código de producto 80562) y cuya velocidad es de 2,67 GHz, fue lanzado al mercado el 2 de noviembre de 2006 al precio de US $999.[14]​ Incorpora el núcleo Kentsfield XE, como complemento se lanzó el Core 2 Extreme X6800 de doble núcleo basado en el núcleo Conroe XE. Como los dobles núcleos Extreme, los procesadores con el núcleo Kentsfield XE incorporaban los multiplicadores desbloqueados.
+El Core 2 Extreme QX6800 que corría a 2,93 GHz fue lanzado el 8 de abril de 2007 al precio de US $1199. Tiene un gasto energético de 130 W, y está hecho para equipos de gama alta.
+El Core 2 Extreme QX6850 que corría a 3 GHz fue lanzado el 22 de julio de 2007 al precio de US$ 999. Implementa un FSB más rápido de 1333 MHz- Simultáneamente, el anteriormente disponible Extreme QX6700 fue reducido de precio.
+
+
+=== Yorkfield XE ===
+El 11 de noviembre de 2007, Intel lanzó al mercado el primer procesador Yorkfield XE, Core 2 Extreme QX9650. Es el primer procesador de Intel para sobremesas en usar tecnología de 45 nm y enclaves metálicos. Los Yorkfield incorporan chips duales con dos cachés L2 de 6 MiB unificadas. También, soporta 1333 MHz de FSB y un reloj interno de 3 GHz. Incorpora además instrucciones de tipo SSE4.1 y cuenta con un total de 820 millones de transistores en chips de  2x107 mm².
+
+
+=== Penryn ===
+El sucesor para el núcleo Merom, usado en la serie portátil Core 2 Duo, cuyo nombre en clave es Penryn, debutó en los procesos a 45nm. En abril de 2007 aparecieron muchos detalles sobre Penryn en el Intel Developer Forum (Foro de Desarrolladores de Intel). Su sucesor se espera que sea el Nehalem.
+Importantes avances[15]​ como la inclusión de instrucciones de tipo SSE4 (también conocidas como Nuevas Instrucciones Penryn, presentes en toda la serie excepto los T4000), reducción de los tiempos de latencia entre núcleos para una mejor y más eficiente interconexión entre estos, nuevos materiales para la fabricación (los más significativos son los dieléctricos de alta temperatura basados en hafnio), entre otras mejoras de arquitectura.
+El Penryn va a la par con la serie Bearlake para sobremesas de Intel de 2007, algunos de los cuales incrementan su velocidad del bus (conexión con el puente norte, etc.) a 1333 MHz y soportan DDR• SDRAM. En portátiles y otros equipos móviles, Penryn  soporta DDR3.
+Los nuevos Intel de 45nm basado en Penryn, denominados Core 2 Duo y Core 2 Extreme, fueron lanzados el 6 de enero de 2008. Los nuevos procesadores consumen sólo 35W, y el modelo T9500 concretamente, fue lanzado para portátiles con compañías como HP, cuyos primeros modelos fueron puestos a la venta con 2,6 GHz a finales de enero de 2008.
+Intel lanzó un chip exclusivo para Apple el 28 de abril de 2008 que incrementa la velocidad hasta 3,06 GHz y el FSB hasta los 1066 MHz, cambiando la caché L2 compartida a 6 MiB.
+El acceso a la serie Penryn comienza con los T4000, con 1 MiB de caché L2 y FSB 800 MHz y finaliza con la serie T9000, con 6 MiB de caché L2 y FSB que va desde 800 MHz hasta los 1066 MHz.
+
+
+=== Wolfdale ===
+
+Wolfdale es el nombre en clave para las series Celeron E3000, Pentium E5000 y E6000, y Core 2 Duo E7000 y E8000 para sobremesas, basados en Penryn y superiores a los chips Conroe, con mejor consumo, menores temperaturas y mayor rendimiento comparados bajo una misma gama, indistintamente de la velocidad del bus y la cantidad de caché. Lanzados el 20 de enero de 2008, incorporan dos núcleos de procesamiento fabricados en un soporte de 45nm e incluyen las extensiones SSE4.1 (excepto la totalidad de Pentium y Celeron, que comprenden las series E3000, E5000 y E6000). Su primer exponente ha sido el E8400, el cual consta de una caché de 6 MiB. Esta primera revisión de Wolfdale era conocida como C0. Luego, con la salida del E8500 y E8600 llegaría una revisión mejorada denominada E0, la cual precisa menos voltaje a una misma frecuencia, permitiendo mejores temperaturas de funcionamiento y mayor margen de overclock. Al mismo tiempo de la salida de los hermanos mayores de la familia Wolfdale, llegaban los modelos E7000, corriendo a 2,53 GHz en su exponente más básico, contando con 3 MiB de caché de nivel 2 y 1066 MHz de FSB. Seguidamente aparecieron los Wolfdale serie E5000, con los que Intel recuperó la denominación Pentium para nombrar esta serie. Los Wolfdale E5000 carecen de instrucciones SSE4.1, poseen 2 MiB de caché de nivel 2 y 800 MHz de FSB corriendo a 2,5 GHz en su modelo más básico, el Pentium E5200. Posteriormente Intel lanza bajo la denominación Celeron la serie E3000, que son básicamente Wolfdale que carecen de SSE4.1, con 1MiB de caché de nivel 2 y 800 MHz de FSB corriendo a 2.4 GHz en su modelo más básico, el Celeron E3200.
+
+
+=== Yorkfield ===
+Yorkfield (nombre en clave para las series Q8000, Q9000 y QX9000) incorporan chips duales de doble núcleo con dos cachés de nivel 2 de 6 MiB unificadas. Versiones más recientes fueron lanzadas con dos cachés de nivel 2 de 3 MiB unificadas y con dos cachés de nivel 2 de 2MiB unificadas, pero se desconoce si se trata de cachés de 6 MiB con una parte deshabilitada o son versiones con 3 MiB y 2 MiB nativos diseñados para reducir costos de producción. También incorporan soporte para FSB a 1333 MHz. Estos procesadores fueron puestos a la venta a finales de mayo de 2008, empezando por el Q9300 y Q9450. Las CPU Yorkfield esperaban ser lanzadas en enero de 2008, pero fueron retrasadas hasta el 15 de mayo. Inicialmente se atribuyó este retraso a un fallo del chip; más tarde se descubrió que se trataba de asegurar la compatibilidad con las placas de cuatro láminas impresas usadas en gran parte de las placas. En Intel Developer Forum de 2007, un Yorkfield fue comparado con un Kentsfield.[16]​[17]​
+
+
+== Sucesores ==
+El sucesor para el Penryn, basado en la micro arquitectura Core posterior que incluye funciones como el retorno de HyperThreading, es  el "Core i7" basado en la microarquitectura Nehalem; fue anunciado en el IDF de septiembre de 2007, y su aparición no se espera hasta antes de finales de 2008. Los Intel basados en Nehalem-Bloomfield serán lanzados en septiembre junto con los chipsets X58.
+La placa de 32nm del Nehalem se denomina Westmere. Sandy Bridge será desarrollado sobre 32 nm con una nueva micro arquitectura sobre 2010. En 2011, Intel lanzará el primer procesador sobre una placa de 22nm. Basándose en el ciclo de Intel de alternar nuevas arquitecturas y nuevas placas cada dos años, actualmente está asumido que Sandy Bridge constituirá una nueva plataforma para soporte .
+
+
+== Requerimientos de sistema ==
+
+
+=== Compatibilidad con placas base ===
+Conroe, Conroe XE y Allendale usan el Socket LGA775; no obstante, no todas las placas base soportan todos los procesadores.
+Los chipsets soportados son:
+
+Intel: 865PE/G/GV/G, 945P/PL/G/GZ/GC, 965P/G, 975X, P/G/Q965, Q963, 946GZ/PL, P3x, G3x, Q3x, X38, X48, P4x , 5400 Express
+NVIDIA: nForce4 Ultra/SLI X16 para Intel, nForce 570/590 SLI para Intel, nForce610i-7050 650i Ultra/650i SLI/680i LT SLI/680i SLI y nForce 750i SLI/780i SLI/790i SLI/790i Ultra SLI.
+VIA: P4M800, P4M800PRO, P4M890, P4M900, PT880 Pro/Ultra, PT890.
+SiS: 662, 671, 671fx, 672, 672fx
+ATI: Radeon Xpress 200 y CrossFire Xpress 3200 para IntelVea también: Lista de chipsets Intel
+El actual Yorkfield XE, modelo QX9770 (45 nm con FSB de 1600 MHz) tiene compatibilidad sólo con algunos chipsets: con X38, P35 (con overclocking) y algunos de alto rendimiento como X48 y P45. De manera escalonada se liberan actualizaciones para BIOS que habilitan el soporte para la nueva tecnología Penryn, y el nuevo QX9775 es compatible únicamente con D5400XS aún y su placa base puede manejar dos de ellos.
+A pesar de que una placa base posea el chipset necesario para soportar el núcleo Conroe, algunas de ellas no lo soportan. Esto lo causa el requerimiento de estos procesadores de energía, que se especifica en el Voltage Regulator-Down (VRD) 11.0. Este requerimiento es el resultado del menor consumo de los núcleos Conroe, comparado con los Pentium 4 y D a los que reemplaza. La mayoría de las placas soportan los núcleos Conroe con una simple actualización de la BIOS que permita reconocer el FID (Frequency ID) de los Conroe y el VID (Voltaje ID).
+
+
+=== Módulos de memoria síncronos ===
+Al contrario que los anteriores Pentium 4 y Pentium D, la tecnología del Core 2 muestra el gran beneficio obtenido al usar memoria sincronizada con el FSB. Esto significa que para una CPU de tipo Conroe con un FSB a 1066 MHz, la memoria ideal es una DDR2 PC2-4200 o PC2-8500. En algunas configuraciones, el uso de una PC2-5300 puede realmente reducir el rendimiento. A pesar de que las memorias DDR2 con velocidades superiores ofrecen incrementar el rendimiento, la diferencia real sobre juegos y aplicaciones es apenas notable.[18]​
+
+En trabajos que requieren grandes montos de acceso a memoria, los procesadores Core 2 de cuatro núcleos se pueden beneficiar significativamente[19]​ del uso de una memoria PC2-8500, la cual funciona exactamente al doble de la velocidad del FSB; no es una configuración oficialmente soportada, pero un buen número de placas base lo ofrecen.
+El procesador Core 2 no requiere el uso de memorias DDR2. Mientras que los chipsets Intel 975X y P965 la necesitan, algunas placas y chipsets soportan Core 2 sobre memoria DDR. En estos casos, el rendimiento puede reducirse debido al bajo ancho de banda de comunicación disponible de la memoria.
+
+
+== Errores de los chips de Intel ==
+La unidad de manejo de memoria (MMU) de los Core 2 en los procesadores X6800, E6000 y E4000 no opera en sistemas antiguos que implementen generaciones de hardware x86. Esto causa problemas, la mayoría de ellos de seguridad y estabilidad, incluso con software operativo disponible. Intel informa que en los próximos meses se actualizarán los manuales de programación con información sobre los métodos recomendados para manejar el TLB (Translation Lookaside Buffer) de los Core 2 para evitar problemas, y admite que «en casos aislados, los fallos del TLB pueden causar comportamiento impredecible del sistema, como cuelgues o información incorrecta».[20]​
+Algunos problemas conocidos:
+
+Protección contra escritura o bits de no ejecución ignorados.
+Instrucciones de coma flotante incoherentes.
+Posibilidad de corromper la memoria fuera de rango permitiendo a un proceso escribir secuencias comunes de instrucciones.Las erratas de Intel Ax39, Ax43, Ax65, Ax79, Ax90, Ax99 son particularmente serias. Concretamente, las 39, 43, y 79, que pueden causar comportamiento impredecible del sistema o cuelgue permanente, se han corregido en recientes pasos.
+Algunos de los que han calificado esta errata como particularmente seria son Theo de Raadt de OpenBSD y Matthew Dillon de DragonFly BSD. Para contrastar las visiones sobre el tema, Linus Torvalds calificó el fallo TLB «absolutamente insignificante», a lo que añadió «El mayor problema es que Intel debería haber documentado el comportamiento del TLB mucho mejor».
+Microsoft ha elaborado la actualización KB936357 para corregir la errata en el micro código sin pérdida de rendimiento.[21]​ Existen actualizaciones para BIOS que corrigen este problema.
+
+
+== Precios ==
+Los precios para los varios modelos de Core 2, en su fecha de lanzamiento, se pueden encontrar en la lista de procesadores Intel Core 2. Cabe añadir que estos precios son válidos para fabricantes como Apple Inc., Dell y HP. No hay precios de referencia para venta al público, si bien es cierto que los precios finales normalmente no se alejan del precio para mayoristas, pero depende de la oferta y la demanda y el margen de beneficio que se reserve el vendedor.
+
+
+== Nomenclatura y abreviaturas ==
+Con el lanzamiento del procesador Core 2, la abreviatura C2 se ha vuelto de uso común, con sus variantes C2D (el presente Core 2 Duo), y C2Q, C2E para referirse a los Core 2 Quad y Core 2 Extreme respectivamente. C2QX se refiere a los Extreme-Edition de los Quad (QX6700, QX6800, QX6850).
+
+
+== Véase también ==
+Anexo:Chipsets Intel
+
+
+== Notas ==
+
+
+== Referencias ==
+
+
+== Enlaces externos ==
+Microarquitectura Intel Core
+Publicación de Intel anunciando Core 2
+Página de Intel Core 2

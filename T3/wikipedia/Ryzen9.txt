@@ -1,0 +1,166 @@
+Ryzen[3]​ es una línea[4]​ de microprocesadores x86-64 diseñada y comercializada por Advanced Micro Devices (AMD) para plataformas de escritorio, portátiles y sistemas embebidos basados en la microarquitectura Zen. Consiste en procesadores comercializados para segmentos como estaciones de trabajo (Workstation), entusiastas (HEDT) y general (Mainstream) y unidades de procesamiento acelerado (APUs) para segmentos básicos (entry-level), general y sistemas embebidos. Ryzen es especialmente importante para AMD, ya que es un diseño completamente nuevo y marca el regreso de la compañía al mercado de procesadores de escritorio de gama alta. Intel, el competidor de AMD, controló esta parte del mercado durante diez años desde el 2006, cuando Intel lanzó la microarquitectura Core derivada del Pentium 3, que continúa sustentando sus diseños de microprocesadores en la actualidad. También es de destacar el fallido lanzamiento de la microarquitectura Bulldozer de AMD en 2011 con el único propósito de centrarse en el "desarrollo de las APUs" durante 5 años hasta que se lanzó la primera generación de procesadores Ryzen en 2017.
+AMD anunció oficialmente una nueva serie de microprocesadores, llamados "Ryzen", durante su evento "New Horizon" en diciembre de 2016 e introdujo la serie de microprocesadores Ryzen 1000 en febrero de 2017, contando con hasta 8 núcleos y 16 hilos, los cuales fueron lanzados oficialmente el 2 de marzo de 2017.[5]​ La segunda generación de microprocesadores Ryzen, los Ryzen 2000, presentan la microarquitectura Zen+, una mejora incremental basada en una tecnología de proceso litográfico de 12 nm, fueron lanzados en abril de 2018 y presentaban un aumento de rendimiento marginal sobre los microprocesadores Ryzen 1000[6]​ que se lanzaron primero en el 2017.[7]​La tercera generación de microprocesadores Ryzen se lanzó el 7 de julio de 2019, basados en la microarquitectura Zen 2 presentan mejoras de diseño más significativas y una reducción adicional del proceso litográfico a los 7 nm de la compañía TSMC. El 16 de junio de 2020, AMD anunció nuevos procesadores Ryzen serie 3000 XT con frecuencia turbo un 4% más altos en comparación con los procesadores que no son XT[8]​.Esto cierra la brecha promedio del 5% de rendimiento en juegos entre Intel y AMD, indicando que los microprocesadores Intel son solamente un 1% más rápidos en promedio en juegos justo antes de que llegue la microarquitectura Zen 3, según los entusiastas de reddit y otros foros en línea. A finales de 2019, se había revelado que el núcleo de Zen 3 es una microarquitectura completamente nueva, se rumorea que se construirá en nodos EUV de 7 nm+ de TSMC (aunque todo lo que se ha confirmado oficialmente en este momento es el uso de un proceso de "7 nm mejorado").
+La mayoría de los productos Ryzen para segmento de consumidores utilizan la plataforma Socket AM4. En agosto de 2017, AMD lanzó su línea Ryzen Threadripper dirigida al mercado de estaciones de trabajo entusiastas. AMD Ryzen Threadripper utiliza los zócalos TR4 y sTRX4, que soportan canales de memoria y líneas PCI Express adicionales.
+En diciembre de 2019, AMD comenzó a lanzar productos Ryzen de primera generación construidos con la arquitectura Zen+ de segunda generación.[9]​ El ejemplo más notable es Ryzen 5 1600, con los lotes más nuevos, tienen un identificador "AF" en lugar de su "AE" habitual, siendo esencialmente un Ryzen 5 2600 rebautizado con las mismas especificaciones que el Ryzen 5 1600 original.
+
+
+== Historia ==
+En los cinco años antes del lanzamiento de Ryzen, el competidor directo de AMD en el mercado de procesadores x86 y x86-64 para consumidores finales, Intel, había seguido aumentando su participación de mercado con el ciclo de mejoras Tick-Tock de su serie de microprocesadores Core.[10]​ Desde el lanzamiento de su microarquitectura Bulldozer en 2011, los procesadores de AMD se habían quedado progresivamente por detrás de los procesadores Intel en rendimiento mono-núcleo  y multi-núcleo.[11]​ A pesar de la reducción de tamaño del chip y de varias revisiones de la arquitectura Bulldozer, el rendimiento y la eficiencia energética no lograron ponerse al día con los productos de la competencia de Intel.
+Ryzen es la implementación a nivel de consumidor final de la nueva microarquitectura Zen, un rediseño completo que marcó el regreso de AMD al mercado de procesadores de gama alta, ofreciendo un conjunto de productos para competir con Intel en todos las gamas.[12]​[13]​ Al tener más núcleos de procesamiento, los procesadores Ryzen ofrecen un mayor rendimiento multi-hilo al mismo precio en relación con los procesadores Intel Core.[14]​ La arquitectura Zen ofrece una mejora en más de un 52% en las [[Instrucciones por ciclo
+|instrucciones por ciclo de reloj]] con respecto a los núcleos Bulldozer de la generación anterior, sin aumentar el consumo de energía.[15]​ Los cambios en el conjunto de instrucciones también lo hacen compatible de forma binaria con Intel Broadwell, lo que facilita la transición para los usuarios.[16]​
+Threadripper, que está diseñado para computadoras de escritorio de alta gama (HEDT), no se desarrolló como parte de un plan de negocios o una hoja de ruta específica; en cambio, un pequeño equipo de entusiastas dentro de AMD vio la oportunidad de que se pudiera desarrollar algo entre las hojas de ruta de los procesadores Ryzen y Epyc que pondría la corona del rendimiento en AMD. Después de algunos avances, el proyecto recibió luz verde y se incluyó en una hoja de ruta oficial para 2016.[17]​
+Desde el lanzamiento de Ryzen, la cuota de mercado de procesadores de AMD ha aumentado, mientras que Intel parece haberse estancado.[10]​
+
+
+== Línea de productos ==
+
+
+=== Ryzen 1000 ===
+
+
+==== CPUs ====
+Zócalo AM4 para Ryzen y zócalo TR4 para Threadripper.[18]​[19]​
+Basados en la primera generación de Zen. Los procesadores Ryzen están basados en la arquitectura Summit Ridge, mientras que Threadripper se basa en la arquitectura Whitehaven.
+4800 millones de transistores por cada chip de 8 núcleos "Zeppelin"[1]​ de 192 mm²,[20]​ utilizando un chip "Zeppelin" para Ryzen y dos para Ryzen Threadripper.
+Revisión (Stepping): B1[21]​
+Soporte de memoria:
+Ryzen doble canal: DDR4–2666 ×2 de rango único, DDR4–2400 ×2 ×2 de rango doble, DDR4–2133 ×4 de rango único, o DDR4–1866 ×4 de rango doble.[18]​[19]​
+Ryzen Threadripper cuádruple-canal: DDR4–2666 ×4 de rango único, DDR4–2400 ×4 de rango doble, DDR4–2133 ×8 de rango único, o DDR4–1866 ×8 de rango doble.
+Conjunto de instrucciones: x87, MMX, SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2, AES, CLMUL, AVX, AVX2, FMA, CVT16/F16C, ABM, BMI1, BMI2, SHA.[16]​
+Todos los procesadores de la marca Ryzen (excepto las variantes Pro) cuentan con multiplicador desbloqueado.
+La tecnología SenseMI de AMD supervisa el procesador de forma continua y utiliza Infinity Control Fabric para ofrecer las siguientes funciones:[18]​[22]​[23]​
+Pure Power: optimiza el uso energético recogiendo temperaturas de cientos de sensores y repartiendo la carga de trabajo sin sacrificar el desempeño.
+Precision Boost: aumenta el voltaje y la frecuencia del procesador en tramos de 100–200 MHz si hay tres o más núcleos están activos (cinco o más, en el caso de Threadripper, y por tramos de 300 MHz); y aumenta significativamente más cuando menos de tres están activos (menos de cinco, en el caso de Threadripper).[24]​
+XFR (eXtended Frequency Range): tiene como objetivo mantener la velocidad media del reloj lo más cercana al máximo del Precision Boost, siempre que se cuente con la refrigeración adecuada.[25]​
+Neural Net Prediction y Smart Prefetch: utilizando predicción mediante inteligencia artificial dentro del procesador para optimizar el flujo de trabajo y la administración de la caché con una carga previa (prefetch) de información inteligente, precarga datos que prevé se necesitarán, optimizando el acceso a la RAM.
+Ryzen se lanzó junto con una línea de disipadores stock para el Socket AM4: El "Wraith Stealth", "Wraith Spire" y el "Wraith Max". Esta línea reemplaza al disipador AMD Wraith original, que se lanzó a mediados de 2016.[26]​El "Wraith Stealth" es un disipador de perfil bajo destinado procesadores de gama baja con una clasificación de TDP de 65 W, mientras que el "Wraith Spire" es el disipador para segmento general con una clasificación de TDP de 95 W, junto con iluminación RGB opcional en ciertos modelos. El "Wraith Max" es un disipador de mayor tamaño que incorpora heatpipes, clasificado para un TDP de 140W.
+
+
+=== Ryzen 2000 ===
+
+
+==== CPUs ====
+Los primeros procesadores Ryzen 2000, basados en la microarquitectura Zen+ de 12 nm, se anunciaron para prepedidos el 13 de abril de 2018[63]​ y lanzados seis días después. Los procesadores Ryzen 2000 se basan en la arquitectura Pinnacle Ridge,[64]​ mientras que los procesadores Threadripper 2000 se basan en la microarquitectura Colfax. El primero de la serie 2000 de productos Ryzen Threadripper, presenta la tecnología Precision Boost Overdrive,[25]​ durante agosto de ese año. El Ryzen 7 2700X se incluyó con el nuevo disipador "Wraith Prism".
+
+
+==== APUs ====
+
+
+===== Escritorio =====
+En enero de 2018, AMD anunció las dos primeras APU Ryzen de escritorio con gráficos Radeon Vega integrados bajo el nombre en clave Raven Ridge. Estas APUs se basaban en la microarquitectura Zen de primera generación. El Ryzen 3 2200G y el Ryzen 5 2400G se lanzaron en febrero.[77]​
+
+
+===== Móviles =====
+En mayo de 2017, AMD presentó una APU Ryzen móvil con 4 núcleos CPU Zen y una GPU Radeon basada en Vega.[91]​ Las primeras APUs Ryzen móviles, con nombre en clave Raven Ridge, fueron oficialmente lanzadas en octubre de 2017.[92]​
+
+4,95 mil millones[93]​ de transistores en un chip de 210 mm²,[93]​ basado en un chip o pastilla Zeppelin de 14 nm modificada donde cuatro de los núcleos son reemplazados por una GPU integrada de quinta-generación GCN.
+Precision Boost 2[64]​
+16 líneas PCIe 3.0 externas (cuatro para el chipset,cuatro para el zócalo M.2 y ocho para el puerto PCIe), 16 líneas PCIe internas para la GPU integrada y las E/S.En 2019, AMD lanzó algunos Zen móviles doble-núcleo listados como 300 o 3000.  
+
+
+===== Embebidos =====
+
+
+====== Great Horned Owl ======
+En febrero de 2018, AMD anunció la serie V1000 de APUs Zen+ Vega embebidas, basadas en la arquitectura Great Horned Owl, con cuatro SKU.[110]​
+
+
+====== Banded Kestrel ======
+En abril de 2019, AMD anunció otra línea de APUs Zen+ Vega embebidas, nombrados como la serie Ryzen Embedded R100 con dos SKU.[113]​
+
+
+=== Ryzen 3000 ===
+
+
+==== CPUs ====
+El 27 de mayo de 2019, en la Computex de Taipei, AMD lanzó su tercera generación de procesadores Ryzen, los cuales usan la arquitectura Zen 2. En esta generación, los procesadores Ryzen utilizan la microarquitectura Matisse, mientras que los procesadores Threadripper están basados en la microarquitectura Castle Peak. El diseño de un Módulo multichip conocido como chiplet, separa los núcleos del procesador, fabricados en el proceso litográfico 7FF de TSMC, y las interfaces E/S, fabricadas en un chiplet con un proceso litográfico de 12nm en GlobalFoundries, y conectados vía Infinity Fabric.[115]​ La serie Ryzen 3000 utiliza el zócalo AM4 similar a los modelos anteriores y son los primeros procesadores en ofrecer conectividad PCIe versión 4.[116]​ La nueva arquitectura ofrece un 15% de mejora en las instrucciones por ciclo (IPC) y una reducción "significativa" del uso de energía. Otras mejoras incluyen la duplicación del tamaño del caché L3, un caché de instrucciones L1 re-optimizado, un caché de microoperaciones más grande, el doble del rendimiento del punto flotante, predicción de rama mejorada y mejor búsqueda previa de instrucciones (pre-fetching).[115]​ Los SKU de 6, 8 y 12 núcleos estuvieron disponibles de forma general el 7 de julio de 2019, y los procesadores de 24 núcleos se lanzaron en noviembre.[117]​
+El Ryzen Threadripper 3990X, parte de la generación de procesadores Castle Peak, es actualmente el procesador orientado al segmento de consumidor final con el mayor número de núcleos e hilos del mundo, un total de 64 núcleos y 128 hilos, respectivamente. El procesador de la competencia, el Intel Core i9-10980XE, tiene solamente 18 núcleos y 36 hilos. Otros competidores, los procesadores para segmento estaciones de trabajo (Workstation) el Intel Xeon W-3275 y el W-3275M, tienen 56 hilos y tuvieron un costo mayor cuando se lanzaron. 
+
+Los procesadores de 4-, 6- y 8-núcleos tienen un solo chiplet. Los procesadores de12- y 16-núcleos tienen dos chiplets. En ambos casos el chip de las interfaces E/S (I/O Die) es el mismo.[115]​
+Los Threadripper de 24- y 32-núcleos tienen cuatro chiplets. El procesador de 64-núcleos tiene ocho chiplets. Todos los procesadores Threadripper usan el mismo chip E/S.
+
+
+==== APUs ====
+
+
+===== Escritorio =====
+
+
+===== Móviles =====
+
+
+=== Ryzen 4000 ===
+
+
+==== APUs ====
+Las APUs Ryzen 4000 están basadas en Renoir, una actualización de los núcleos de CPU Zen 2 Matisse, junto con núcleos de GPU Radeon Vega. Se lanzaron solo a fabricantes OEM a mediados de 2020.
+
+
+===== Escritorio =====
+
+
+===== Móviles =====
+APUs Zen 2, basadas en la microarquitectura Renoir de 7 nm, comercializadas como Ryzen 4000.[150]​[151]​[152]​
+
+
+=== Ryzen 5000 ===
+La serie de escritorio Ryzen 5000, basada en la microarquitectura Zen 3, se anunció el 8 de octubre de 2020.[165]​[166]​Utilizan un proceso de fabricación mejorado de 7 nm. Los núcleos de los procesadores Ryzen 5000 para el segmento de consumo general tienen nombre en clave Vermeer. Los núcleos de los procesadores Threadripper 4000 para segmento entusiasta/estaciones de trabajo tienen nombre en clave Genesis.
+
+
+==== CPUs ====
+
+
+== Recepción inicial ==
+Los primeros procesadores Ryzen 7 1700, 1700X, y 1800X fueron lanzados a principios de marzo de 2017, y en general fueron bien recibidos por los medios especializados.[171]​[172]​[173]​ Ryzen fue la primera nueva arquitectura de AMD en cinco años, y sin mucha optimización inicial, tuvo buenas críticas.[174]​ Los primeros chips ejecutaron correctamente software y juegos que ya estaban en el mercado, y tuvieron un desempeño excepcionalmente bueno en escenarios de estaciones de trabajo, así como en la mayoría de los escenarios de juego. En comparación con los procesadores FX basados en Piledriver, los Ryzen basados en Zen funcionan a menor temperatura, mucho más rápido y con menor consumo de energía. El IPC aumentó en un 52 % con respecto de Excavator.[1]​ Aunque Zen no alcanzó a Kaby Lake de Intel en términos de IPC, y por lo tanto, en rendimiento mono núcleo, lo compensó el ofrecer más núcleos a las aplicaciones que pueden usarlos. El consumo de energía y la temperatura resultaron ser altamente competitivos respecto de la línea Core de Intel, y los disipadores Wraith también resultaron competitivos respecto de alternativas de mayor precio.
+El rendimiento multihilo de Ryzen al utilizar Blender u otro software de código abierto, fue de alrededor de cuatro veces el rendimiento del FX-8370.[175]​ Los Ryzen suelen superar a los Intel i7, cuando son utilizados sus ocho núcleos, por un precio mucho menor.[175]​
+Sin embargo, el rendimiento de Ryzen fue menor al de los Intel Core al ejecutar juegos antiguos, o bien determinados juegos más nuevos, cuando estos utilizan resoluciones estándar como 720p o 1080p.[176]​ AMD reconoció el déficit de rendimiento de los juegos en resoluciones bajas, explicando que trabajaría en parches y actualizaciones para resolverlo.[177]​ Una actualización del videojuego Ashes of the Singularity: Escalation incrementó los FPS entre un 17 y un 31 % en computadoras con CPU Ryzen.[178]​ Id Software anunció en abril de 2017 la optimización de sus futuros juegos para hacer uso del mayor paralelismo disponible en los procesadores Ryzen.[179]​
+Se ha sugerido que la baja utilización de núcleos redundó en una subutilización de los procesadores Ryzen, obteniendo peores resultados en las pruebas de rendimiento, sobre todo teniendo en cuenta que el IPC ligeramente más bajo de Zen requiere la plena utilización de los núcleos.[180]​[181]​[182]​ Sin Embargo, AMD y otros han argumentado que el pobre manejo de los núcleos Ryzen por parte de Windows 10 no es la única causa para la pérdida de rendimiento, sino que además hubo problemas con placas madre AM4 y su BIOS, que hacían que muchos chips Ryzen funcionen con underclocking (velocidad más baja), parcialmente apagados, u otros errores en la BIOS que impactaban negativamente en el rendimiento.[183]​[184]​
+
+
+== Soporte del sistema operativo ==
+
+
+=== Windows ===
+Aunque AMD ha verificado la capacidad de los equipos con procesadores Ryzen de funcionar con Windows 7 y Windows 8, Microsoft oficialmente solo entrega soporte a los procesadores Ryzen en equipos que ejecutan Windows 10. Las actualizaciones de Windows se bloquean en computadoras con procesador Ryzen que ejecutan versiones anteriores de Windows 10, aunque esa restricción se puede eludir con un parche no oficial.[185]​ En sintonía con Microsoft, AMD solo proporciona controladores para Windows 10.[186]​
+
+
+=== Linux ===
+Soporte completo para las funciones de rendimiento de los procesadores Ryzen en Linux requieren una versión de kernel 4.10 o superior.[187]​
+
+
+== Problemas conocidos ==
+
+
+=== FMA3 ===
+La UEFI incorporada en algunas placas madre con zócalo AM4  puede generar bloqueos si una aplicación ejecuta ciertas instrucciones FMA3.[188]​ AMD confirmó a mediados de marzo de 2017 que el problema sería solucionado a través de actualizaciones del BIOS por parte de los fabricantes de placas madre. La corrección llegó con la actualización AGESA 1.0.0.4 (el código base del BIOS para las placas madre AMD que usan todos los fabricantes), que estuvo ampliamente disponible en forma de actualizaciones de BIOS a mediados de abril de 2017.[189]​
+
+
+=== Spectre ===
+Como casi todos los microprocesadores recientes, Ryzen era susceptible a las vulnerabilidades de "Spectre". Las vulnerabilidades se pueden mitigar sin cambios de hardware a través de actualizaciones de microcódigo y soluciones alternativas del sistema operativo, pero las mitigaciones incurren en una penalización de rendimiento. AMD Ryzen y Epyc sufren hasta un 9% de penalización por las mitigaciones, ependiendo de la carga de trabajo, en comparación favorable con una penalización de, en algunos casos, más del 50% para los procesadores Intel Core y Xeon, en parte como resultado de que los procesadores AMD no requieren mitigación contra la vulnerabilidad Meltdown.
+Lanzado en 2019, Zen 2 incluye mitigaciones de hardware contra la vulnerabilidad Spectre V4.[115]​[190]​
+
+
+=== Violación de acceso ===
+Algunos de los primeros envíos de procesadores de la serie Ryzen 1000 produjeron fallas de violación de acceso en ciertas cargas de trabajo en Linux, especialmente al compilar código con GCC.[191]​ AMD se ofreció a reemplazar los procesadores afectados por otros más nuevos que no se vean afectados por el problema.[192]​
+
+
+=== Problemas informados por CTS Labs ===
+A principios de 2018, CTS Labs, una consultora israelí de ciberseguridad, declaró que habían descubierto varias fallas importantes en el ecosistema de componentes de Ryzen.[193]​ y las reveló públicamente después de darle a AMD 24 horas para responder y plantear inquietudes y preguntas sobre su legitimidad,[194]​[195]​ aunque luego fueron confirmados por dos empresas de seguridad distintas.[196]​ AMD ha declarado desde entonces que, si bien las fallas son reales y se solucionarían mediante actualizaciones de microcódigo, su gravedad fue exagerada, ya que se requiere acceso físico al hardware para explotar las fallas.[197]​
+
+
+== Véase también ==
+AMD Accelerated Processing Unit
+Anexo:Procesadores AMD
+Anexo:Procesadores AMD Athlon
+Anexo:Procesadores AMD Phenom
+Anexo:Procesadores AMD Ryzen
+Anexo:Procesadores AMD Opteron
+Anexo:Procesadores AMD FX
+
+
+== Referencias ==
+
+
+== Enlaces externos ==
+Sitio oficial de AMD Ryzen en amd.com
+AMD's New Horizon summit Lanzamiento de Ryzen 7
